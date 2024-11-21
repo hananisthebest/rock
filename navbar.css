@@ -1,0 +1,29 @@
+body {
+    min-block-size:100vb;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: hsl(27, 61%, 85%);
+    background-image: linear-gradient(to right bottom,hsl(292, 77%, 19%), hsl(255, 76%, 21%), hsl(275, 84%, 10%));
+    
+}
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2rem;
+    margin:2rem;
+    border-radius: 0.5rem;
+    background-color: hsl(292deg 30% 5%);
+}
+.header_ul {
+    display: flex; 
+    gap: 1.5rem; 
+    list-style: none; 
+    
+}
+.header_a { 
+    color: hsl(27, 61%, 85%); 
+    text-decoration: none;
+
+}

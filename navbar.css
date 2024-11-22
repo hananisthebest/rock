@@ -8,6 +8,8 @@ font-family: 'Open Sans', sans-serif;
 body { 
     height: 100vh;
     background-color: black;
-    background-image: url(drum-set-1839383_1920.jpg)
+    background-image: url(drum-set-1839383_1920.jpg);
+    background-size: cover;
+    background-position: center;
     
 }

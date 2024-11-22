@@ -15,5 +15,8 @@ body {
 
 li{ 
     list-style: none;
-    
+}
+
+li{
+    text-decoration: none;
 }

@@ -11,5 +11,9 @@ body {
     background-image: url(drum-set-1839383_1920.jpg);
     background-size: cover;
     background-position: center;
+}
+
+li{ 
+    list-style: none;
     
 }

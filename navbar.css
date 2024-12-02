@@ -19,4 +19,8 @@ li{
 
 li{
     text-decoration: none;
-}hdhdhd
+}
+
+.rounded {
+border-radius: 5px;
+}

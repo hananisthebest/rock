@@ -1,6 +1,10 @@
+body {
+    height: 5000 px;
+}
 
 img {
 width: 100%;
 height: 100vh;
 object-fit: cover; 
+
 }

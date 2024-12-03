@@ -31,7 +31,7 @@ z-index: -1;
 display: flex;
 align-items: center; 
 justify-content: space-between;
-padding: 20px 50px;
+padding: 10px 30px;
 color: #fff;
 
 }
@@ -42,6 +42,7 @@ color: #fff;
 
 .links {
     display: flex;
+    column-gap: 10px; 
 
 }
 

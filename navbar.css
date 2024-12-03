@@ -37,6 +37,11 @@ position: fixed;
 width: 100% 
 }
 
+.header-scrolled {
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15); 
+}
+
 .logo {
 
 }

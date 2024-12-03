@@ -1,2 +1,8 @@
-
+div {
+    width: 100%;
+    height: 400px;
+    background-image: url('hompage2.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  } 
 

@@ -76,5 +76,5 @@ transition: all 0.5s;
 } 
 
 #addon { 
-  transform: translate(60px,120px);  
+  transform: translate(0px,200px);  
 }

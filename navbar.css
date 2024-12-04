@@ -75,9 +75,3 @@ transition: all 0.5s;
 
 } 
 
-#addon {
-    width: 100%;
-    height: auto;
-    z-index: 7;
-    
-}

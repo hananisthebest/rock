@@ -75,4 +75,16 @@ transition: all 0.5s;
 
 }
 
+.container {
+    position: relative;
+}
+.addon {
+    position: absolute;
+    left: -100px;
+    z-index: 7;
+}
 
+#addon
+{
+
+}

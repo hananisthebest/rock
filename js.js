@@ -6,5 +6,6 @@ window.addEventListener('scroll', () => {
     } else if (window.scrollY <= 50) {
         headerEl.classList.remove('header-scrolled'); 
     }
-});
+});  
 
+$('.carousel').carousel() 

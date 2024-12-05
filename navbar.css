@@ -1,80 +1,81 @@
 * {
-margin: 0; 
-padding: 0;
-box-sizing: border-box;
-font-family: 'Open Sans', sans-serif; 
-} 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
 
-body { 
+body {
     height: 100vh;
     background-color: black;
     background-size: cover;
     background-position: center;
+    text-align: center;
+    position: relative;
 }
 
-li{ 
-    list-style: none;
-}
-
-li{
+li {
     text-decoration: none;
-}
-
-
-* {
-    padding: 0; 
-    margin: 0;
-    box-sizing: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 2em;
+    margin-left: 3em;
+    margin-right:3em ;
 }
 
 a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
+    text-align: center;
 }
 
-ul { 
-    list-style: none; 
-}
-body {
-    height: 5000px;
-    position: relative;
+ul {
+    list-style: none;
+    text-align: center;
 }
 
 img {
-width: 100%;
-height: auto;
-max-height: 100%;
-display:block;
-object-fit: cover; 
-position: absolute;
-top: 0;
-left: 0;
-z-index: -1;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .header {
-display: flex;
-align-items: center; 
-justify-content: space-between;
-padding: 10px 30px;
-color: #fff;
-position: fixed;
-width: 100%;
-transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Center the navbar items horizontally */
+    padding: 10px 30px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s;
 }
 
 .header-scrolled {
     background-color: black;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15); 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
-
 
 .links {
     display: flex;
-    column-gap: 10px; 
+    column-gap: 10px;
+    text-align: center;
+}
 
-} 
+#addon {
+    transform: translate(0px, 160px);
+}
+.logo {
+    text-align: justify;
+}
 
-#addon { 
-  transform: translate(0px,160px);  
+p{
+    text-align: justify;
 }

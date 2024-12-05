@@ -79,3 +79,12 @@ transition: all 0.5s;
 #addon { 
   transform: translate(0px,160px);  
 }
+
+#carouselExampleIndicators {
+    max-height: 980px;
+    margin: 0 auto;
+  } 
+
+  #carousel-indicators {
+    top: 85%;
+  }

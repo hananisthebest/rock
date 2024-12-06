@@ -8,4 +8,6 @@ window.addEventListener('scroll', () => {
     }
 });  
 
-$('.carousel').carousel() 
+$('body').on('click','#carouselID .carousel-control',function() {
+    $(this).closest('.carousel').carousel( $(this).data('slide') );
+ }); 

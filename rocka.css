@@ -1,0 +1,102 @@
+/* General Layout */
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Buffer Section */
+.buffer-section {
+    position: relative;
+    background: #000;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.buffer-section h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+/* Tour Dates Button */
+.tour-dates-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #C896DC;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 4px 4px 10px rgba(66, 90, 94, 0.75);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-dates-btn span {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+.tour-dates-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 12px rgba(66, 90, 94, 0.75);
+}
+
+/* Carousel Section */
+.carousel {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* contact us button */
+.carousel-btn-container {
+    position: absolute;
+    top: 60%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.carousel-contact-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C896DC;
+    color: #000;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 250px;
+    height: 65px;
+    box-shadow: 4px 4px 10px rgba(66, 90, 94, 0.75);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-contact-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 12px rgba(66, 90, 94, 0.75);
+}

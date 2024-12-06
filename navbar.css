@@ -2,85 +2,92 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-}
-
-body {
-    height: 100vh;
-    
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    position: relative;
-}
-
-li {
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-    font-size: 2em;
-    margin-left: 3em;
-    margin-right:3em ;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-}
-
-ul {
-    list-style: none;
-    text-align: center;
-}
-
-img {
+  }
+  
+  /* Body and HTML Setup */
+  html, body {
     width: 100%;
-    height: auto;
-    max-height: 100%;
-    display: block;
-    object-fit: cover;
-    position: absolute;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header/Navbar Setup */
+  .header {
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly; /* Center the navbar items horizontally */
-    padding: 10px 30px;
-    color: #fff;
-    position: fixed;
     width: 100%;
-    transition: all 0.5s;
-}
-
-.header-scrolled {
-    background-color: black;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.links {
+    padding: 4.20px 420px;
+    background: rgba(0, 0, 0, 0.3); /* idk how to make the background fully transparent*/
+    z-index: 9999;
     display: flex;
-    column-gap: 10px;
-    text-align: center;
-}
-
-#addon {
-    transform: translate(0px, 160px);
-}
-.logo {
-    text-align: justify;
-}
-
-p{
-    text-align: justify;
-}
-
-#addon { 
-  transform: translate(0px,160px);  
-}
-
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%; /* Ensure it doesn't stretch outside screen */
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  
+  .header .logo a {
+    display: inline-block;
+  }
+  
+  .header .logo img {
+    width: 120px; 
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .header .logo a:hover img {
+    transform: scale(1.1); /* HOVER EFFECT */
+  }
+  
+  
+  .header .links {
+    display: flex;
+    justify-content: center; 
+    gap: 50px; 
+    align-items: center;
+  }
+  
+  .header .link-item {
+    list-style: none;
+  }
+  
+  .header .link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; 
+    font-weight: bold;
+    transition: color 0.3s, font-size 0.3s; 
+  }
+  
+  .header .link:hover {
+    color: #d76f8e; /* morre hover effect */
+    font-size: 20px; /* Slightly bigger text on hover */
+  }
+  
+  /* Adjust for smaller screens */
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 20px;
+    }
+  
+    .header .links {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .header .logo img {
+      width: 100px; /* Smaller logo for smaller screens */
+    }
+  
+    .header .link {
+      font-size: 16px; /* Smaller font on mobile */
+    }
+  }
+  

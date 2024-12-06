@@ -1,0 +1,317 @@
+/* Contact Us */
+
+position: relative;
+width: 1440px;
+height: 1960px;
+
+background: #140329;
+
+
+/* Vector 2 */
+
+position: absolute;
+width: 1440px;
+height: 297px;
+left: 4.23px;
+top: 0.15px;
+
+border: 1px solid #000000;
+transform: rotate(0.47deg);
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 759px;
+left: -23px;
+top: -1px;
+
+background: #140329;
+
+
+/* logo-search-grid-2x-removebg-preview 1 */
+
+position: absolute;
+width: 439px;
+height: 205px;
+left: 467px;
+top: -40px;
+
+background: url(logo-search-grid-2x-removebg-preview.png);
+
+
+/* Our History */
+
+position: absolute;
+width: 220px;
+height: 53px;
+left: 43px;
+top: 81px;
+
+font-family: 'Ek Mukta';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 53px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* CONTACT US */
+
+position: absolute;
+width: 199px;
+height: 53px;
+left: 329px;
+top: 81px;
+
+font-family: 'Ek Mukta';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 53px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* TOUR dates */
+
+position: absolute;
+width: 197px;
+height: 53px;
+left: 842px;
+top: 81px;
+
+font-family: 'Ek Mukta';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 53px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* MERCH */
+
+position: absolute;
+width: 111px;
+height: 53px;
+left: 1102px;
+top: 81px;
+
+font-family: 'Ek Mukta';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 53px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* download-removebg-preview (9) 1 */
+
+position: absolute;
+width: 89px;
+height: 74px;
+left: 1246px;
+top: 70px;
+
+background: url(download-removebg-preview (9).png);
+
+
+/* download-removebg-preview (10) 1 */
+
+position: absolute;
+width: 83px;
+height: 76px;
+left: 1335px;
+top: 70px;
+
+background: url(download-removebg-preview (10).png);
+
+
+/* STAGE FRIGHT */
+
+position: absolute;
+width: 392px;
+height: 79px;
+left: 494px;
+top: 158px;
+
+font-family: 'Metal Mania';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 59px;
+text-align: center;
+
+color: #F9F1FF;
+
+
+
+/* Rectangle 13 */
+
+position: absolute;
+width: 199px;
+height: 9px;
+left: 329px;
+top: 125px;
+
+background: #D9D9D9;
+
+
+/* Rectangle 21 */
+
+position: absolute;
+width: 1354px;
+height: 1357px;
+left: 43px;
+top: 478px;
+
+background: #D9D9D9;
+
+
+/* Rectangle 25 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 566px;
+height: 152px;
+left: 121px;
+top: 691px;
+
+background: #D9D9D9;
+opacity: 0.8;
+border: 1px solid #000000;
+border-radius: 8px;
+
+
+/* Rectangle 26 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 566px;
+height: 152px;
+left: 720px;
+top: 691px;
+
+background: #D9D9D9;
+border: 1px solid #000000;
+border-radius: 8px;
+
+
+/* Rectangle 27 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 887px;
+height: 173px;
+left: 121px;
+top: 1041px;
+
+background: #D9D9D9;
+border: 1px solid #000000;
+border-radius: 8px;
+
+
+/* Rectangle 28 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1076px;
+height: 294px;
+left: 121px;
+top: 1406px;
+
+background: #D9D9D9;
+border: 1px solid #000000;
+border-radius: 8px;
+
+
+/* First Name* */
+
+position: absolute;
+width: 125px;
+height: 28px;
+left: 121px;
+top: 653px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Email* */
+
+position: absolute;
+width: 125px;
+height: 28px;
+left: 121px;
+top: 1002px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Message* */
+
+position: absolute;
+width: 125px;
+height: 28px;
+left: 121px;
+top: 1367px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Last Name* */
+
+position: absolute;
+width: 125px;
+height: 28px;
+left: 718px;
+top: 653px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+

@@ -84,3 +84,18 @@ p{
   transform: translate(0px,160px);  
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.carousel { 
+    width:100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.slide {
+    position: absolute; 
+    inset: 0;
+    
+}

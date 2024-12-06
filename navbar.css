@@ -143,10 +143,10 @@ p{
     outline: 1px solid black;  
 }
 
-.carousel-button:prev { 
+.carousel-button.prev { 
     left: 1rem;
 }
 
-.carousel-button:next { 
+.carousel-button.next { 
     right: 1rem;
 }

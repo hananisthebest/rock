@@ -45,7 +45,7 @@
   
 
 * {
-  margin: 0;
+  margin:  0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -91,10 +91,7 @@ body {
       background: url("mikah.png")
         no-repeat 50% / cover;
     }
-    &:nth-of-type(5) {
-        background: url("kaitlyn.png")
-          no-repeat 50% / cover;
-    } 
+    
     .content {
       font-size: 1.5rem;
       color: #fff;
@@ -134,5 +131,6 @@ body {
       visibility: visible;
     }
   }
-}
+} 
+
  

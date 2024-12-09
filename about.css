@@ -26,16 +26,19 @@
     color: #fff;
     cursor: pointer;
   }
+
+  #metal-mania-band {
+    font-family: "Metal Mania", system-ui;
+  }
   
   #myBtn:hover {
     background: #ddd;
     color: black;
   } 
-  
   @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
 
   .metal-mania-regular {
-    font-family: "Metal Mania", system-ui;
+    
     font-weight: 300;
     font-style: normal;
   }

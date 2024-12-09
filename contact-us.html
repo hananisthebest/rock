@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>StageFright | Contact Us</title>
 
     <!-- css -->
@@ -29,28 +33,45 @@
         <li class="link-item"><a href="contact-us.html" class="link">Contact Us</a></li>
       </ul>
     </header>
-
-    <!-- put content here -->
-    <section style="padding-top: 80px;">
-      <h1>SHOP</h1>
-      <p>coming soon</p>
-    </section>
-
-<body style="background-color: #140329; color: purple;">
-    <div class="container-fluid mt-3 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-      <div style="width: 2500px; height: 1000px; background-color: #D9D9D9; padding: 20px;">
-        <div class="row">
-          <div class="col-md-6">
-            <label for="first-name">First Name:</label>
-            <textarea class="form-control" rows="2" id="first-name" name="first-name" style="color: black;"></textarea>
+    
+    <!-- Main Content -->
+    <body style="background-color: #140329; color: purple;">
+      <div class="container-fluid mt-3 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="d-flex flex-column justify-content-between position-relative" style="width: 2500px; height: 1000px; background-color: #D9D9D9; padding: 20px;">
+          <!-- Top Section: First Name and Last Name -->
+          <div class="row">
+            <div class="col-md-6">
+              <label for="first-name">First Name:</label>
+              <textarea class="form-control border border-dark" rows="5" id="first-name" name="first-name" style="color: black;"></textarea>
+            </div>
+            <div class="col-md-6">
+              <label for="last-name">Last Name:</label>
+              <textarea class="form-control border border-dark" rows="5" id="last-name" name="last-name" style="color: black;"></textarea>
+            </div>
           </div>
-          <div class="col-md-6">
-            <label for="last-name">Last Name:</label>
-            <textarea class="form-control" rows="2" id="last-name" name="last-name" style="color: black;"></textarea>
+          
+          <!-- Middle Section: Email -->
+          <div class="row">
+            <div class="col-md-8">
+              <label for="email">Email:</label>
+              <textarea class="form-control border border-dark" rows="10" id="email" name="email" style="color: black;"></textarea>
+            </div>
           </div>
+          
+          <!-- Bottom Section: Comments -->
+          <div class="row">
+            <div class="col-md-8">
+              <label for="comments">Comments:</label>
+              <textarea class="form-control border border-dark" rows="15" id="comments" name="comments" style="color: black;"></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary position-absolute" style="bottom: 20px; right: 20px;">
+            Submit
+          </button>
         </div>
       </div>
-    </div>
+    </body>
   </body>
 </html>
-

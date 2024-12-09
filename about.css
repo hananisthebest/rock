@@ -33,7 +33,7 @@
   } 
   @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 * {
-  margin: 0;
+  margin: 15;
   padding: 0;
   box-sizing: border-box;
 }

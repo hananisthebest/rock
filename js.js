@@ -1,24 +1,19 @@
-const headerEl = document.querySelector('.header'); 
+const headerEl = document.querySelector('.header');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        headerEl.classList.add('header-scrolled');
-    } else if (window.scrollY <= 50) {
-        headerEl.classList.remove('header-scrolled'); 
-    }
-});  
 
-$('.carousel').carousel() 
+function handleScroll() {
+  const scrollY = window.scrollY;
 
-window.onscroll = function() {stickyNavbar()};
 
-var navbar = document.querySelector('.header');
-var sticky = navbar.offsetTop;
-
-function stickyNavbar() {
-  if (window.pageYOffset > sticky) {
-    navbar.classList.add('sticky');
+  if (scrollY > 50) {
+    headerEl.classList.add('header-scrolled');
   } else {
-    navbar.classList.remove('sticky');
+    headerEl.classList.remove('header-scrolled');
+  }
+  
+  if (scrollY > headerEl.offsetTop) {
+    headerEl.classList.add('sticky');
+  } else {
+    headerEl.classList.remove('sticky');
   }
 }

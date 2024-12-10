@@ -8,12 +8,12 @@
   
   /* Add some content at the bottom of the video/page */
   .content {
-    position: fixed;
+    
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
   }
   
   /* Style the button used to pause/play the video */
@@ -43,9 +43,20 @@
     font-style: normal;
   }
   
+  #band-button { 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
 
 * {
-  margin: 0;
+  margin:  0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -91,10 +102,7 @@ body {
       background: url("mikah.png")
         no-repeat 50% / cover;
     }
-    &:nth-of-type(5) {
-        background: url("kaitlyn.png")
-          no-repeat 50% / cover;
-    } 
+    
     .content {
       font-size: 1.5rem;
       color: #fff;
@@ -134,5 +142,6 @@ body {
       visibility: visible;
     }
   }
-}
+} 
+
  

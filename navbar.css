@@ -20,8 +20,8 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 30%;
-  background: transparent; /* idk how to make the background fully transparent*/
+  padding: 0.5% 15%;
+  background: rgba(0, 0, 0, 0.25); 
   z-index: 9999;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@ html, body {
   max-width: 100%; /* Ensure it doesn't stretch outside screen */
   margin: 0 auto;
   box-sizing: border-box;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px); /* Optional: Adds a slight blur effect for better contrast */
 }
 
@@ -53,7 +53,7 @@ html, body {
 .header .links {
   display: flex;
   justify-content: center; 
-  gap: 100px; 
+  column-gap: 175px; 
   align-items: center;
 }
 
@@ -64,14 +64,14 @@ html, body {
 .header .link {
   text-decoration: none;
   color: white;
-  font-size: 24px; 
+  font-size: 27px; 
   font-weight: bold;
   transition: color 0.3s, font-size 0.3s; 
 }
 
 .header .link:hover {
   color: #d76f8e; /* morre hover effect */
-  font-size: 27px; /* Slightly bigger text on hover */
+  font-size: 31px; /* Slightly bigger text on hover */
 }
 
 /* Adjust for smaller screens */
@@ -83,7 +83,7 @@ html, body {
   .header .links {
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 1%;
   }
 
   .header .logo img {

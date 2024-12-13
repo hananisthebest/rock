@@ -1,96 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body and HTML Setup */
-  html, body {
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header/Navbar Setup */
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 1200px;
-    background: transparent; /* idk how to make the background fully transparent*/
-    z-index: 9999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%; /* Ensure it doesn't stretch outside screen */
-    margin: 0 auto;
-    box-sizing: border-box;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px); /* Optional: Adds a slight blur effect for better contrast */
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
-  .header .logo a {
-    display: inline-block;
+/* Body and HTML Setup */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header/Navbar Setup */
+.header {
+  container: fluid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30%;
+  background: transparent; /* idk how to make the background fully transparent*/
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%; /* Ensure it doesn't stretch outside screen */
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px); /* Optional: Adds a slight blur effect for better contrast */
+}
+
+
+
+.header .logo a {
+  display: inline-block;
+}
+
+.header .logo img {
+  width: 175px; 
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.header .logo a:hover img {
+  transform: scale(1.15); /* HOVER EFFECT */
+}
+
+
+.header .links {
+  display: flex;
+  justify-content: center; 
+  gap: 100px; 
+  align-items: center;
+}
+
+.header .link-item {
+  list-style: none;
+}
+
+.header .link {
+  text-decoration: none;
+  color: white;
+  font-size: 24px; 
+  font-weight: bold;
+  transition: color 0.3s, font-size 0.3s; 
+}
+
+.header .link:hover {
+  color: #d76f8e; /* morre hover effect */
+  font-size: 27px; /* Slightly bigger text on hover */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 50px;
   }
-  
-  .header .logo img {
-    width: 175px; 
-    height: auto;
-    transition: transform 0.3s ease;
-  }
-  
-  .header .logo a:hover img {
-    transform: scale(1.15); /* HOVER EFFECT */
-  }
-  
-  
+
   .header .links {
-    display: flex;
-    justify-content: center; 
-    gap: 100px; 
+    flex-direction: column;
     align-items: center;
+    gap: 5px;
   }
-  
-  .header .link-item {
-    list-style: none;
+
+  .header .logo img {
+    width: 100px; /* Smaller logo for smaller screens */
   }
-  
+
   .header .link {
-    text-decoration: none;
-    color: white;
-    font-size: 24px; 
-    font-weight: bold;
-    transition: color 0.3s, font-size 0.3s; 
+    font-size: 16px; /* Smaller font on mobile */
   }
-  
-  .header .link:hover {
-    color: #d76f8e; /* morre hover effect */
-    font-size: 27px; /* Slightly bigger text on hover */
-  }
-  
-  /* Adjust for smaller screens */
-  @media (max-width: 768px) {
-    .header {
-      padding: 10px 50px;
-    }
-  
-    .header .links {
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
-  
-    .header .logo img {
-      width: 100px; /* Smaller logo for smaller screens */
-    }
-  
-    .header .link {
-      font-size: 16px; /* Smaller font on mobile */
-    }
-  }
-  
+}
+body {
+  padding-top: 70px; /* Add padding to avoid content being hidden under the navbar */
+}

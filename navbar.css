@@ -64,14 +64,14 @@ html, body {
 .header .link {
   text-decoration: none;
   color: white;
-  font-size: 27px; 
+  font-size: 30px; 
   font-weight: bold;
   transition: color 0.3s, font-size 0.3s; 
 }
 
 .header .link:hover {
   color: #d76f8e; /* morre hover effect */
-  font-size: 31px; /* Slightly bigger text on hover */
+  font-size: 34px; /* Slightly bigger text on hover */
 }
 
 /* Adjust for smaller screens */

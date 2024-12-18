@@ -21,7 +21,7 @@ html, body {
   left: 0;
   width: 100%;
   padding: 0.5% 15%;
-  background: rgba(0, 0, 0, 0.25); 
+  background: rgba(0, 0, 0, 0.2); 
   z-index: 9999;
   display: flex;
   justify-content: space-between;
@@ -40,13 +40,13 @@ html, body {
 }
 
 .header .logo img {
-  width: 175px; 
+  width: 200px; 
   height: auto;
   transition: transform 0.3s ease;
 }
 
 .header .logo a:hover img {
-  transform: scale(1.15); /* HOVER EFFECT */
+  transform: scale(1.25); /* HOVER EFFECT */
 }
 
 
@@ -64,14 +64,14 @@ html, body {
 .header .link {
   text-decoration: none;
   color: white;
-  font-size: 27px; 
+  font-size: 30px; 
   font-weight: bold;
   transition: color 0.3s, font-size 0.3s; 
 }
 
 .header .link:hover {
   color: #d76f8e; /* morre hover effect */
-  font-size: 31px; /* Slightly bigger text on hover */
+  font-size: 34px; /* Slightly bigger text on hover */
 }
 
 /* Adjust for smaller screens */

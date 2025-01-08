@@ -14,13 +14,26 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="merch.css">
     <style>
-      
       .backgroundimg {
         margin-top: -70px;
         width: 100%;
         height: auto;
       }
 
+      .dropdown-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Custom Transparent Button */
+      .btn-transparent {
+        background-color: transparent;
+        color: white;
+      }
+
+      .btn-transparent:hover {
+        color: #fff; /* Optional: text color on hover */
+      }
     </style>
   </head>
   <body style="background-color: #140329;">
@@ -43,13 +56,28 @@
       </ul>
     </header>
 
+    <!-- Image Container -->
     <div class="image-container">
       <img 
         class="mx-auto d-block backgroundimg" 
         src="merch_img.png" 
         alt="Dark Concert Image"
       >
-
     </div>
+
+    <!-- Dropdown Menu Below Image -->
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <button type="button" class="btn btn-transparent dropdown-toggle" data-toggle="dropdown">
+          Shop Here
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>

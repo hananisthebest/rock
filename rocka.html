@@ -1,4 +1,4 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -8,11 +8,13 @@
 
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="rocka.css"> 
-    <link rel="stylesheet" href="footer.css">
   </head>
-  <body style="background-color: #140329;">
+  <body style="background-color: #140329; display: flex; flex-direction: column; min-height: 100vh;">
+
     <!-- Navbar -->
     <header class="header">
       <ul class="links">
@@ -31,19 +33,14 @@
         <li class="link-item"><a href="contact-us.html" class="link">Contact Us</a></li>
       </ul>
     </header>
+
     <!-- Hero Section -->
-       <section>
-        <img class="d-block w-100"src="wachoo.png" alt="Drum Set">
+    <section>
+      <img class="d-block w-100" src="wachoo.png" alt="Drum Set">
     </section>
     <section>
-      <img class="d-block w-100"src="upcomingconcerts.png" alt="tour dates">
-  </section>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-</body>
-</html>
+      <img class="d-block w-100" src="upcomingconcerts.png" alt="tour dates">
+    </section>
 
     <!-- Carousel Section -->
     <section id="carouselSection" class="carousel slide" data-ride="carousel">
@@ -83,21 +80,53 @@
       <img class="d-block w-100" src="meet-the-band-home.png" alt="Band Preview">
     </section>
 
-    <!-- all of the footer stuff -->
-    <div id="footer-container"></div>
-
-    <script>
-      // Load the footer dynamically
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footer-container').innerHTML = data;
-        });
-    </script>
-
-    <!-- JS Libraries (jQuery, Popper.js, Bootstrap JS) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <body>
+      <footer class="footer">
+          <!-- Top Image -->
+          <div class="footer-top-image">
+              <img src="footerheadimg.png" alt="Footer Heading" />
+          </div>
+  
+          <!-- Social Icons -->
+          <div class="footerContainer">
+              <div class="socialIcons">
+                  <a href="https://www.instagram.com/officialstagefrightband/" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  
+                  <a href="https://x.com/fright_sta96486" target="_blank">
+                      <i class="fa-brands fa-twitter"></i></a>
+  
+                  <a href="https://www.youtube.com/channel/UCNrklXnl1g6ChVAZEOcw2cA" target="_blank">
+                      <i class="fa-brands fa-youtube"></i></a>
+              </div>
+          </div>
+  
+          <!-- Bottom Image -->
+          <div class="footer-bottom-image">
+              <img src="footerbottom.png" alt="Footer Bottom" />
+          </div>
+  
+          <!-- Bumper -->
+          <div class="footer-bumper"></div>
+          
+          <!-- Footer Navigation Links -->
+          <div class="footerNav">
+              <ul>   
+                  <li><a href="rocka.html">Home</a></li>
+                  <li>|</li>
+                  <li><a href="about.html">Our History</a></li>
+                  <li>|</li>
+                  <li><a href="merch.html">Merch</a></li>
+                  <li>|</li>
+                  <li><a href="tour-dates.html">Tour Dates</a></li>
+                  <li>|</li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li>|</li>
+                  <li>©STAGEFRIGHT</li>
+              </ul>
+          </div>
+      </footer>
   </body>
-</html>
+  </html>

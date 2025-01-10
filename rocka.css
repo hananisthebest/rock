@@ -100,3 +100,7 @@ body {
     transform: translateY(-5px);
     box-shadow: 6px 6px 12px rgba(66, 90, 94, 0.75);
 }
+
+footer {
+    margin: -25px
+}

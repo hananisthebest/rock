@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000000;
+}
+
+/* Top Image */
+.footer-top-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Footer Container */
+.footerContainer {
+  width: 100%;
+  padding: 50px 0 20px;
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: -15px;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 14px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 1.9em;
+  color: rgb(0, 0, 0);
+}
+
+/* Social Icons Hover Effect */
+.socialIcons a:hover {
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+/* Footer Navigation */
+.footer-bottom-image {
+  padding-top: 30px;
+}
+
+.footer-bumper {
+  height: 1px; /* Adjust height as needed */
+  background-color: #c4c4c4; /* Darker shade for bumper */
+  border-top: 1px solid #afafaf; /* Optional border for separation */ 
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex; /* Arrange items horizontally */
+  justify-content: center; /* Center items */
+  align-items: center; /* Align items vertically */
+  list-style-type: none; /* Remove bullet points */
+  gap: 10px; /* Space between items */
+  padding-bottom: 15px;
+  margin: -10px;
+}
+
+.footerNav ul li {
+  font-size: 1rem; /* Adjust size as needed */
+  color: white; /* Default text color */
+  font-family: Arial, sans-serif;
+}
+
+.footerNav ul li a {
+  text-decoration: none; 
+  color: white; 
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footerNav ul li a:hover {
+  color: #d3d3d3; 
+  transform: scale(1.2); 
+}
+
+.footerNav ul li a:active {
+  color: #bfbfbf;
+  transform: scale(1.0); 
+}
+
+/* Bottom Image */
+.footer-bottom-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .footerNav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .socialIcons a {
+      padding: 10px;
+      margin: 10px;
+  }
+}

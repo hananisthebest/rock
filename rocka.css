@@ -147,4 +147,128 @@ body {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); 
 }
 
+.ticket-button {
+    position: absolute;
+    top: -5056px;
+    left: 1510px; 
+    background-color: #EDBEFF;
+    color: #000;
+    font-size: 1.75rem;
+    padding: 25px 43px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
 
+/* Hover effect */
+.ticket-button:hover {
+    background-color: #e8adff;
+    color:#070707;
+    transform: scale(1.1);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+/* Active effect */
+.ticket-button:active {
+    transform: scale(1.0);
+    color:#070707;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.ticket-button2 {
+    position: absolute;
+    top: -5056px;
+    left: 2460px; 
+    background-color: #EDBEFF;
+    color: #000;
+    font-size: 1.75rem;
+    padding: 25px 43px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+.ticket-button2:hover {
+    background-color: #e8adff;
+    color:#070707;
+    transform: scale(1.1);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+/* Active effect */
+.ticket-button2:active {
+    transform: scale(1.0);
+    color:#070707;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+/* Sold Out Button Styles */
+.soldout-button {
+    position: absolute;
+    top: -5056px;
+    left: 595px;
+    background-color: #767676; 
+    color: #000000; 
+    font-size: 1.75rem;
+    padding: 25px 43px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: not-allowed;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect (optional, for visual feedback) */
+.soldout-button:hover {
+    background-color: #767676; /* Slightly darker grey */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color:#000000
+    
+}
+
+.meet-button {
+    position: absolute;
+    top: -1600px;
+    left: 1475px; 
+    background-color: #C896DC;
+    color: #000;
+    font-size: 2rem;
+    padding: 25px 100px;
+    border: none;
+    Opacity: 0.7;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .meet-button:hover {
+    background-color:#b970d6;
+    transform: scale(1.1);
+    opacity: 0.8;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .meet-button:focus {
+    outline: none;
+  }

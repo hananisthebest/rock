@@ -1,3 +1,6 @@
+.header {
+  justify-content: center !important;
+}
 * {
   margin: 0;
   padding: 0;

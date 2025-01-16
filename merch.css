@@ -1,0 +1,116 @@
+/* General Styling for Merch Page */
+body {
+    background-color: #140329;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items across */
+    gap: 50px; /* Increased gap between items */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-rows: repeat(5, 400px); /* Adjust height of grid items */
+}
+
+.merch-item {
+    position: relative;
+    text-align: center;
+    transition: transform 0.2s ease-in-out; /* Reduced transition speed */
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden; /* To keep images inside the container */
+    width: 100%; /* Make sure the item stretches to full container width */
+    height: 100%; /* Ensure item height is proportional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.merch-item img {
+    width: 100%;
+    height: 100%; /* Make images fill container height */
+    object-fit: contain; /* Prevent image stretching */
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.merch-item .front,
+.merch-item .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Prevent image stretching */
+}
+
+.merch-item .front {
+    z-index: 1;
+}
+
+.merch-item .back {
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.05s ease-in-out; /* Reduced opacity transition speed */
+}
+
+.merch-item:hover .front {
+    opacity: 0; 
+}
+
+.merch-item:hover .back {
+    opacity: 1; 
+}
+
+.image-container {
+    margin-top: -70px;
+    text-align: center;
+}
+
+.backgroundimg {
+    width: 100%;
+    height: auto;
+}
+
+/* Add the merch text at the bottom of the page */
+.merch-bottom-text {
+    text-align: center;
+    font-size: 30px; /* Large font size */
+    font-weight: bold; /* Make it bold */
+    margin-top: 40px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dropdown button and menu */
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-transparent:hover {
+    color: #FF8EB6;
+}
+
+.dropdown-menu {
+    background-color: #140329;
+}
+
+.merch-bottom-text {
+    margin: -450px;
+}

@@ -275,3 +275,73 @@ body {
   .meet-button:focus {
     outline: none;
   }
+
+  .merch-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.merch-button img {
+    position: absolute;
+    top: 4730px; 
+    left: 2990px; 
+    display: block;
+    width: auto;
+    height: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.merch-button:hover img {
+    transform: scale(1.1); 
+}
+
+.merch-button:active img {
+    transform: scale(0.95); 
+}
+
+.custom-link {
+    position: absolute;
+    top: 2600px; 
+    left: 2790px; 
+    color: black; 
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold; 
+    transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+    color: #555; 
+    text-decoration: underline;
+}
+
+.custom-link:visited {
+    color: black; 
+    
+}
+
+.custom-link2 {
+    position: absolute;
+    top: 4530px; 
+    left: 2670px; 
+    color: black; 
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold; 
+    transition: color 0.3s ease;
+}
+
+.custom-link2:hover {
+    color: #555; 
+    text-decoration: underline;
+}
+
+.custom-link2:visited {
+    color: black; 
+    
+}
+

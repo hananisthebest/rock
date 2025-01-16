@@ -8,7 +8,7 @@
   
   /* Add some content at the bottom of the video/page */
   .content {
-    
+  
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
@@ -31,10 +31,7 @@
     font-family: "Metal Mania", system-ui;
   }
   
-  #myBtn:hover {
-    background: #ddd;
-    color: black;
-  } 
+ 
   @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
 
   .metal-mania-regular {
@@ -42,18 +39,37 @@
     font-weight: 300;
     font-style: normal;
   }
-  
-  #band-button { 
-    border: none;
-    color: white;
-    padding: 15px 32px;
+  .button-62 {
+    background: linear-gradient(to bottom right, #ce68ec3b, #ff51d989);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
   }
+  
+  .button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(158, 31, 193, 0.5), .125rem .125rem 1rem rgba(252, 90, 255, 0.5);
+  }
+  
+  .button-62:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(120, 17, 148, 0.5);
+  }
+  
+  
 
 * {
   margin:  0;

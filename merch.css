@@ -46,14 +46,15 @@ body {
     position: absolute;
     bottom: 10px; /* Position text at the bottom of the image */
     width: 100%;
-    text-align: center;
+    text-align: center; /* Center text horizontally */
     color: white;
     font-weight: bold;
-    font-size: 18px; /* Adjusted for better readability */
+    font-size: 20px; /* Adjusted for better readability */
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
     margin: 0;
+
 }
 
 .merch-item .front,

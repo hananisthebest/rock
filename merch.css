@@ -8,35 +8,52 @@ body {
 }
 
 .merch-grid {
+    z-index: 999;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 items across */
     gap: 50px; /* Increased gap between items */
-    padding: 40px;
-    max-width: 1200px;
+    padding: 80px;
+    max-width: 1800px;
     margin: 0 auto;
-    grid-template-rows: repeat(5, 400px); /* Adjust height of grid items */
+    grid-template-rows: repeat(5, 650px); /* Adjust the rows height to match the item height */
 }
+
 
 .merch-item {
     position: relative;
     text-align: center;
-    transition: transform 0.2s ease-in-out; /* Reduced transition speed */
+    transition: transform 0.2s ease-in-out;
     cursor: pointer;
     border-radius: 8px;
-    overflow: hidden; /* To keep images inside the container */
-    width: 100%; /* Make sure the item stretches to full container width */
-    height: 100%; /* Ensure item height is proportional */
+    overflow: hidden;
+    width: 100%;
+    height: 680px; /* Increase the height to allow more space for the description text */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .merch-item img {
     width: 100%;
-    height: 100%; /* Make images fill container height */
-    object-fit: contain; /* Prevent image stretching */
+    height: 100%; /* Make sure the image covers the full space */
+    object-fit: contain;
     border-radius: 8px;
     transition: opacity 0.3s ease-in-out;
+}
+
+.description {
+    position: absolute;
+    bottom: 10px; /* Position text at the bottom of the image */
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px; /* Adjusted for better readability */
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background for readability */
+    margin: 0;
 }
 
 .merch-item .front,
@@ -48,7 +65,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Prevent image stretching */
+    object-fit: contain;
 }
 
 .merch-item .front {
@@ -58,19 +75,18 @@ body {
 .merch-item .back {
     z-index: 0;
     opacity: 0;
-    transition: opacity 0.05s ease-in-out; /* Reduced opacity transition speed */
 }
 
 .merch-item:hover .front {
-    opacity: 0; 
+    opacity: 0;
 }
 
 .merch-item:hover .back {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .image-container {
-    margin-top: -70px;
+    margin-top: -75px;
     text-align: center;
 }
 
@@ -82,7 +98,7 @@ body {
 /* Add the merch text at the bottom of the page */
 .merch-bottom-text {
     text-align: center;
-    font-size: 30px; /* Large font size */
+    font-size: 40px; /* Large font size */
     font-weight: bold; /* Make it bold */
     margin-top: 40px;
     color: white;
@@ -111,6 +127,7 @@ body {
     background-color: #140329;
 }
 
+
 .merch-bottom-text {
-    margin: -450px;
+    margin: -3550px;
 }

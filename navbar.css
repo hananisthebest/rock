@@ -40,9 +40,11 @@ html, body {
 
 .header .logo a {
   display: inline-block;
+  align-items: center;
 }
 
 .header .logo img {
+  
   width: 200px; 
   height: auto;
   transition: transform 0.3s ease;

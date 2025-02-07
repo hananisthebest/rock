@@ -24,26 +24,44 @@ body {
 }
 
 /* Navbar styles */
+/* Navbar styles */
 nav {
-  background-color: #140329;
+  position: absolute; /* Navbar starts at the top and overlaps content */
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  z-index: 1000; /* Keeps it above other content */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: transparent;
   padding: 10px 12%;
-  font-family: 'Rock Salt', cursive; /* Apply only to navbar */
+  font-family: 'Rock Salt', cursive;
   font-weight: 700;
 }
+
+.hero-section { /* Adjust the first section below navbar */
+  padding-top: 80px; /* Adjust based on navbar height */
+}
+
+
+
+.hidden {
+  transform: translateY(-100%); /* Hides navbar when scrolled down */
+}
+
 
 .nav_links {
   display: flex;
   list-style: none;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   gap: 5rem; /* Set a fixed gap */
   max-width: 100%; /* Prevent overflow */
   flex-shrink: 0; /* Prevent shrinking on smaller screens */
 }
 
 .nav_links a {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   color: #edf0f1;
   text-decoration: none;
@@ -92,6 +110,18 @@ nav {
 }
 
 /* Media Queries */
+@media screen and (max-width: 1400px) { 
+  .nav_links li a {
+      font-size: 20px; /* Adjust to your preferred size */
+  }
+}
+@media screen and (max-width: 1000px) { 
+  .nav_links li a {
+      font-size: 16px; /* Adjust to your preferred size */
+  }
+}
+
+
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;

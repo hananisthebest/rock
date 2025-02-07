@@ -1,347 +1,58 @@
-/* General Layout */
-
+/* General Page Styling */
 body {
+    background-color: #140329;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
-    background: #fff;
     overflow-x: hidden;
 }
 
-/* Hero Image */
-.hero-image img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-/* Buffer Section */
-.buffer-section {
+/* Video Container */
+.video-container {
     position: relative;
-    background: #000;
-    color: #fff;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.buffer-section h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin: 0 0 10px 0;
-}
-
-/* Tour Dates Button */
-.tour-dates-btn {
-    display: inline-flex;
-    align-items: center;
-    background-color: #C896DC;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 4px 4px 10px rgba(66, 90, 94, 0.75);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tour-dates-btn span {
-    margin-left: 8px;
-    font-size: 1.2rem;
-}
-
-.tour-dates-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 6px 6px 12px rgba(66, 90, 94, 0.75);
-}
-
-
-
-/* Carousel Section */
-.carousel {
-    width: 100%;
-    height: 600px;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
-.carousel-inner img {
+/* Background Video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 600px;
+    height: 100%;
     object-fit: cover;
-    margin: auto;
-}
-
-/* contact us button */
-.carousel-btn-container {
-    position: absolute;
-    top: 60%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-}
-
-.carousel-contact-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #C896DC;
-    color: #000;
-    padding: 20px 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 25px;
-    width: 250px;
-    height: 65px;
-    box-shadow: 4px 4px 10px rgba(66, 90, 94, 0.75);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.carousel-contact-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 6px 6px 12px rgba(66, 90, 94, 0.75);
-}
-
-footer {
-    margin: -25px
-}
-
-body {
-    font-family: Arial, s, sans-serif;
-  }
-  
-  .button-container {
-    position: relative;
-  }
-  
-.the-band-button {
-    position: absolute;
-    top: -6820px;
-    left: 625px; 
-    background-color: #DDBDFF;
-    color: rgb(27, 27, 27);
-    font-size: 3rem; 
-    padding: 25px 85px; 
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transform: rotate(9deg);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-    text-decoration: none; 
-    display: inline-block;
-    text-align: center;
-}
-
-/* Hover effect */
-.the-band-button:hover {
-    background-color: #c793ff;
-    transform: rotate(9deg) scale(1.15); 
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); 
-    color: #070707; 
-    text-decoration: none; 
-}
-
-/* Active effect */
-.the-band-button:active {
-    transform: rotate(9deg) scale(0.95);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); 
-}
-
-.ticket-button {
-    position: absolute;
-    top: -5056px;
-    left: 1510px; 
-    background-color: #EDBEFF;
-    color: #000;
-    font-size: 1.75rem;
-    padding: 25px 43px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Hover effect */
-.ticket-button:hover {
-    background-color: #e8adff;
-    color:#070707;
-    transform: scale(1.1);
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-}
-
-/* Active effect */
-.ticket-button:active {
-    transform: scale(1.0);
-    color:#070707;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-}
-
-.ticket-button2 {
-    position: absolute;
-    top: -5056px;
-    left: 2460px; 
-    background-color: #EDBEFF;
-    color: #000;
-    font-size: 1.75rem;
-    padding: 25px 43px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Hover effect */
-.ticket-button2:hover {
-    background-color: #e8adff;
-    color:#070707;
-    transform: scale(1.1);
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-}
-
-/* Active effect */
-.ticket-button2:active {
-    transform: scale(1.0);
-    color:#070707;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-}
-
-/* Sold Out Button Styles */
-.soldout-button {
-    position: absolute;
-    top: -5056px;
-    left: 595px;
-    background-color: #767676; 
-    color: #000000; 
-    font-size: 1.75rem;
-    padding: 25px 43px;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    cursor: not-allowed;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Hover effect (optional, for visual feedback) */
-.soldout-button:hover {
-    background-color: #767676; /* Slightly darker grey */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-    color:#000000
-    
-}
-
-.meet-button {
-    position: absolute;
-    top: -1600px;
-    left: 1475px; 
-    background-color: #C896DC;
-    color: #000;
-    font-size: 2rem;
-    padding: 25px 100px;
-    border: none;
-    Opacity: 0.7;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .meet-button:hover {
-    background-color:#b970d6;
-    transform: scale(1.1);
     opacity: 0.8;
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  .meet-button:focus {
-    outline: none;
-  }
-
-  .merch-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
 }
 
-.merch-button img {
+/* YouTube Video */
+.youtube-video {
     position: absolute;
-    top: 4730px; 
-    left: 2990px; 
-    display: block;
-    width: auto;
-    height: auto;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;  
+    height: 39.375vw; 
+    max-width: 960px; 
+    max-height: 540px;
 }
 
-.merch-button:hover img {
-    transform: scale(1.1); 
-}
-
-.merch-button:active img {
-    transform: scale(0.95); 
-}
-
-.custom-link {
+/* Scroll Indicator */
+.scroll-indicator {
     position: absolute;
-    top: 2600px; 
-    left: 2790px; 
-    color: black; 
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: bold; 
-    transition: color 0.3s ease;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;  
+    font-weight:bold;  
+    color: white;
+    animation: bounce 1.5s infinite;
 }
 
-.custom-link:hover {
-    color: #555; 
-    text-decoration: underline;
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(15px); }  /* Increased bounce */
 }
-
-.custom-link:visited {
-    color: black; 
-    
-}
-
-.custom-link2 {
-    position: absolute;
-    top: 4530px; 
-    left: 2670px; 
-    color: black; 
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: bold; 
-    transition: color 0.3s ease;
-}
-
-.custom-link2:hover {
-    color: #555; 
-    text-decoration: underline;
-}
-
-.custom-link2:visited {
-    color: black; 
-    
-}
-

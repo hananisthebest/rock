@@ -12,8 +12,7 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    width: 100%;
-    padding: 40px;
+    padding: 200px
   }
   
   /* Style the button used to pause/play the video */
@@ -147,7 +146,7 @@ body {
 
       span {
         display: block;
-        margin-top: 5px;
+        margin-top: 50px;
         font-size: 1.2rem;
       }
     }

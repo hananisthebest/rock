@@ -9,92 +9,494 @@
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="rocka.css"> 
+    <link rel="stylesheet" href="rocka.css">
+    <link rel="stylesheet" href="footer.css"> 
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="tdc.css">
+    <!--merch carousel-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rock+Salt&display=swap" rel="stylesheet">
   </head>
-  <body style="background-color: #140329; display: flex; flex-direction: column; min-height: 100vh;">
+  <body>
 
-     <!-- Navbar -->
-  <nav id="navbar">
-    <!-- Sidebar Menu (hidden by default) -->
-    <ul class="sidebar">
-      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-      <li><a href="about.html">The Band</a></li>
-      <li><a href="tour-dates.html">Tour Dates</a></li>
-    </ul>
-
-   
-
-    <!-- Main Navigation Links -->
-    <ul class="nav_links left">
-      <li><a href="about.html" class="hideOnMobile">The Band</a></li>
-      <li><a href="tour-dates.html" class="hideOnMobile">Tour Dates</a></li>
-    </ul>
-    <a href="rocka.html">
-        <img class="logo" src="logo.png" alt="logo">
+   <!-- Navbar -->
+<nav id="navbar">
+  <a href="rocka.html" class="logo-container">
+    <img class="logo" src="logo.png" alt="logo">
+  </a>
+  <ul class="nav_links">
+    <li><a href="about.html" class="hideOnMobile">The Band</a></li>
+    <li><a href="tour-dates.html" class="hideOnMobile">Tour Dates</a></li>
+    <li><a href="merch.html" class="hideOnMobile">Merch</a></li>
+    <li><a href="contact-us.html" class="hideOnMobile">Contact Us</a></li>
+    <li class="menu-button" onclick="showSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path fill="white" d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg>
       </a>
-    <ul class="nav_links right">
-      <li><a href="merch.html" class="hideOnMobile">Merch</a></li>
-      <li><a href="contact-us.html" class="hideOnMobile">Contact Us</a></li>
-      <li class="menu-button" onclick="showSidebar()">
-        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a>
-      </li>
-    </ul>
-  </nav>
+    </li>
+  </ul>
+  <!-- Sidebar for mobile view -->
+  <ul class="sidebar">
+    <li onclick="hideSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path fill="white" d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg>
+      </a>
+    </li>
+    <li><a href="about.html">The Band</a></li>
+    <li><a href="tour-dates.html">Tour Dates</a></li>
+    <li><a href="merch.html">Merch</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+</nav>
+<script src="navbar.js"></script>
 
-  <script src="navbar.js"></script>
+    <!-- Video Section -->
+    <div class="video-container">
+        <video class="background-video" playsinline autoplay muted loop preload="preload">
+            <source src="rock3.mp4" type="video/mp4">
+        </video>
+        <iframe class="youtube-video" width="1863" height="757" 
+                src="https://www.youtube.com/embed/BfuOF8VmzVY" 
+                title="Stage Fright *New* Single" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <div class="scroll-indicator">&#8595;</div>
+    </div>
 
-    <!-- Hero Section -->
-    <section>
-      <img class="d-block w-100" src="wachoo.png" alt="Drum Set">
-    </section>
-    <section>
-      <img class="d-block w-100" src="upcomingconcerts.png" alt="tour dates">
-    </section>
+  </body>
+</html>
 
-    <!-- Carousel Section -->
-    <section id="carouselSection" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselSection" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselSection" data-slide-to="1"></li>
-        <li data-target="#carouselSection" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="c2.png" alt="Concert Image 2">
-          <div class="carousel-btn-container">
-            <a href="contact-us.html" class="carousel-contact-btn">CONTACT US</a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="c3.png" alt="Concert Image 3">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="c4.png" alt="Concert Image 4">
-        </div>
+
+<!--tour dates carousel-->
+
+<img src="upcomingconcerts.png" alt="Upcoming Concerts" class="upcomingconcerts-image">
+<div class="slide-container">
+  <div class="slides">
+      <img src="t1.png" class="active">
+      <img src="t2.png">
+      <img src="t3.png">
+      <img src="t4.png">
+      <img src="t5.png">
+      <img src="t6.png">
+      <img src="t7.png">
+      <img src="t8.png">
+      <img src="t9.png">
+  </div>
+
+  <div class="buttons">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+  </div>
+</div>
+
+<script src="rocka.js"></script>
+<a href="tour-dates.html" class="buy-tickets-btn">BUY TICKETS</a>
+
+
+<img src="wachoo.png" alt="wachoo" class="wachoo-image">
+
+
+<!--merch carousel-->
+<img src="merch.png" alt="merch" class="merch-image">
+<a href="merch.html" class="view-merch-link">VIEW MERCH  ></a>
+
+<section class="product"> 
+  <button class="pre-btn"><img src="arrow.png" alt=""></button>
+  <button class="nxt-btn"><img src="arrow.png" alt=""></button>
+  <div class="product-container">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="black-crewneck-front.png" class="product-thumb" alt="Black Crewneck">
       </div>
-      <a class="carousel-control-prev" href="#carouselSection" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselSection" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </section>
-    
-    <section>
-      <img class="d-block w-100" src="merch-home-page.png" alt="Merch Preview">
-    </section>
-    <section>
-      <img class="d-block w-100" src="meet-the-band-home.png" alt="Band Preview">
-    </section>
+      <div class="product-info">
+        <p class="product-short-description">Black Crewneck</p>
+        <span class="price">$40</span>
+      </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="pink-hoodie-front.png" class="product-thumb" alt="Pink Hoodie">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Pink Hoodie</p>
+        <span class="price">$45</span>
+      </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="black-mug-front.png" class="product-thumb" alt="Black Mug">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Black Mug</p>
+        <span class="price">$10</span>
+      </div>
+    </div>
+    <!-- Product 4 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="black-zipup-front.png" class="product-thumb" alt="Black Zip-Up">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Black Zip-Up</p>
+        <span class="price">$50</span>
+      </div>
+    </div>
+    <!-- Product 5 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="bucket-hat-front.png" class="product-thumb" alt="Bucket Hat">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Bucket Hat</p>
+        <span class="price">$15</span>
+      </div>
+    </div>
+    <!-- Product 6 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="stagefrightshirt.png" class="product-thumb" alt="Pink Shirt">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Pink Shirt</p>
+        <span class="price">$25</span>
+      </div>
+    </div>
+    <!-- Product 7 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="navy-zipup-front.png" class="product-thumb" alt="Navy Zip-Up">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Navy Zip-Up</p>
+        <span class="price">$50</span>
+      </div>
+    </div>
+    <!-- Product 8 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="pink-crewneck-front.png" class="product-thumb" alt="Pink Crewneck">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Pink Crewneck</p>
+        <span class="price">$35</span>
+      </div>
+    </div>
+    <!-- Product 9 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="black-hoodie-front.png" class="product-thumb" alt="Black Hoodie">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Black Hoodie</p>
+        <span class="price">$40</span>
+      </div>
+    </div>
+    <!-- Product 10 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="purple-mug-front.png" class="product-thumb" alt="Purple Mug">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Purple Mug</p>
+        <span class="price">$10</span>
+      </div>
+    </div>
+    <!-- Product 11 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="trucker-hat-front.png" class="product-thumb" alt="Trucker Hat">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">Trucker Hat</p>
+        <span class="price">$20</span>
+      </div>
+    </div>
+    <!-- Product 12 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="white-crewneck-front.png" class="product-thumb" alt="White Crewneck">
+      </div>
+      <div class="product-info">
+        <p class="product-short-description">White Crewneck</p>
+        <span class="price">$35</span>
+      </div>
+    </div>
+  </div>
 
-    <!-- Footer -->
+  <script src="rockamerch.js"></script>
+</section>
+ 
+
+
+<style>
+
+  .view-merch-link {
+z-index: 1000;
+padding-left: 75%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000; 
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.view-merch-link:hover {
+  color: #000000; 
+}
+@media screen and (max-width: 1000px) {
+    .view-merch-link {
+        font-size: 12px;
+    }
+}
+
+.product {
+  margin-top: -10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-family: "Oswald";
+  font-size: 40px;
+  font-weight: 800;
+  color:black;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #ff7d7d;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-family: "Oswald";
+  font-size: 20px;
+  font-weight: 600;
+  color:rgb(43, 43, 43);
+  overflow: hidden;
+  opacity: 0.66;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+  color:rgb(14, 14, 14)
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%); /* Ensure perfect vertical centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: translateY(-50%) rotate(180deg); /* Keep rotation and ensure vertical centering */
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.4; /* Updated opacity to 0.4 */
+  transition: opacity 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+/* Prevent the focus outline when clicked */
+.pre-btn:focus,
+.nxt-btn:focus {
+  outline: none;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+</style>
+
+<!--meet the band-->
+    </section>
+    <section class="image-container">
+      <img src="meet-the-band-home.png" alt="the-band" class="theband-image">
+      <a href="about.html" class="theband-button">THE BAND</a>
+      <style>
+        .image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.theband-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.theband-button {
+  position: absolute;
+  font-family: arial;
+  top: 57%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 105, 180, 0.6); /* Pink color with transparency */
+  color: white;
+  font-size: 1.5rem; /* Adjust font size */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.theband-button:hover {
+  background-color: rgba(255, 105, 180, 1); /* Solid pink when hovered */
+  color:white;
+  text-decoration: none;
+  transform: translate(-50%, -50%) scale(1.1); /* Slight scaling on hover */
+}
+
+@media (max-width: 768px) {
+  .theband-button {
+    font-size: 0.6rem; /* Smaller font size for smaller screens */
+    top: 58%;
+    padding: 4px 10px;
+  }
+}
+
+      </style>
+  </section>
+  
+
+<!-- Footer -->
     <body>
       <footer class="footer">
-          <!-- Top Image -->
           <div class="footer-top-image">
               <img src="footerheadimg.png" alt="Footer Heading" />
           </div>
@@ -116,11 +518,8 @@
           <div class="footer-bottom-image">
               <img src="footerbottom.png" alt="Footer Bottom" />
           </div>
-  
-          <!-- Bumper -->
           <div class="footer-bumper"></div>
-          
-          <!-- Footer Navigation Links -->
+
           <div class="footerNav">
               <ul>   
                   <li><a href="rocka.html">Home</a></li>
@@ -137,41 +536,4 @@
               </ul>
           </div>
       </footer>
-  </body>
-
-  <body style="margin: 0; padding: 0; height: 100vh; background-color: #140329;">
-    <div class="button-container" style="display: flex; justify-content: center; align-items: center; height: 100%;">
-  
-      <a href="about.html" class="the-band-button"><b>THE BAND</b></a>
-  
-    </div>
-  </body>  
-
-  <body>
-  <div class="button-container">
-    <a href="#" class="soldout-button"><b>SOLD OUT</b></a>
-  </div>
-  
-    <div class="button-container">
-      <a href="tour-dates.html" class="ticket-button"><b>BUY TICKETS</b></a>
-    </div>
-  
-  <div class="button-container">
-  <a href="tour-dates.html" class="ticket-button2"><b>BUY TICKETS</b></a>
-  </div>
-  
-  <div class="button-container">
-    <a href="about.html" class="meet-button"><b>LEARN MORE</b></a>
-  </div>
-  
-  <div>
-    <a href="merch.html" class="merch-button">
-    <img src="mercharrow.png" alt="Merch Arrow Button">
-  </a>
-  
-  <a href="tour-dates.html" class="custom-link">VIEW ALL TOUR DATES &nbsp;  <span class="arrow"><b>></b></span> </a>
-  <a href="merch.html" class="custom-link2">VIEW MERCH &nbsp;<span class="arrow"><b>></b></span></a>
-  </div>
-  </body>  
-
-  </html>
+    </body>

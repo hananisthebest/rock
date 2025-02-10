@@ -4,54 +4,54 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>StageFright | About Us</title>
-    
-    <!-- CSS -->
+    <title>StageFright | The Band</title>
+
+    <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="footer.css"> 
     <link rel="stylesheet" href="navbar.css">
   </head>
-  <body style="background-color: #140329;">
+  <body>
 
-
-      <!-- Navbar -->
-  <nav id="navbar">
-    <!-- Sidebar Menu (hidden by default) -->
-    <ul class="sidebar">
-      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-      <li><a href="about.html">The Band</a></li>
-      <li><a href="tour-dates.html">Tour Dates</a></li>
-    </ul>
-
-   
-
-    <!-- Main Navigation Links -->
-    <ul class="nav_links left">
-      <li><a href="about.html" class="hideOnMobile">The Band</a></li>
-      <li><a href="tour-dates.html" class="hideOnMobile">Tour Dates</a></li>
-    </ul>
-    <a href="rocka.html">
-        <img class="logo" src="logo.png" alt="logo">
+   <!-- Navbar -->
+<nav id="navbar">
+  <a href="rocka.html" class="logo-container">
+    <img class="logo" src="logo.png" alt="logo">
+  </a>
+  <ul class="nav_links">
+    <li><a href="about.html" class="hideOnMobile">The Band</a></li>
+    <li><a href="tour-dates.html" class="hideOnMobile">Tour Dates</a></li>
+    <li><a href="merch.html" class="hideOnMobile">Merch</a></li>
+    <li><a href="contact-us.html" class="hideOnMobile">Contact Us</a></li>
+    <li class="menu-button" onclick="showSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path fill="white" d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg>
       </a>
-    <ul class="nav_links right">
-      <li><a href="merch.html" class="hideOnMobile">Merch</a></li>
-      <li><a href="contact-us.html" class="hideOnMobile">Contact Us</a></li>
-      <li class="menu-button" onclick="showSidebar()">
-        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a>
-      </li>
-    </ul>
-  </nav>
-
-  <script src="navbar.js"></script>
+    </li>
+  </ul>
+  <!-- Sidebar for mobile view -->
+  <ul class="sidebar">
+    <li onclick="hideSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path fill="white" d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg>
+      </a>
+    </li>
+    <li><a href="about.html">The Band</a></li>
+    <li><a href="tour-dates.html">Tour Dates</a></li>
+    <li><a href="merch.html">Merch</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+</nav>
+<script src="navbar.js"></script>
 
     <!-- Content  -->
-    <section style="padding-top: 10px;"> 
-      <h1>About the Band</h1> 
-      <p>DA BANDDD</p>
-    </section>
-    
+
  <!-- The video -->
  <video autoplay muted loop id="myVideo">
   <source src="rock1.mp4" type="video/mp4">
@@ -112,55 +112,50 @@
       </div> 
     </div>
   </div> 
- </div>
+</div>
+</body>
+</html>
 
-  <body> 
-    <!-- Footer -->
-    <body>
-      <footer class="footer">
-          <!-- Top Image -->
-          <div class="footer-top-image">
-              <img src="footerheadimg.png" alt="Footer Heading" />
-          </div>
-  
-          <!-- Social Icons -->
-          <div class="footerContainer">
-              <div class="socialIcons">
-                  <a href="https://www.instagram.com/officialstagefrightband/" target="_blank">
-                      <i class="fa-brands fa-instagram"></i>
-                  </a>
-                  
-                  <a href="https://x.com/fright_sta96486" target="_blank">
-                      <i class="fa-brands fa-twitter"></i></a>
-  
-                  <a href="https://www.youtube.com/channel/UCNrklXnl1g6ChVAZEOcw2cA" target="_blank">
-                      <i class="fa-brands fa-youtube"></i></a>
-              </div>
-          </div>
-  
-          <!-- Bottom Image -->
-          <div class="footer-bottom-image">
-              <img src="footerbottom.png" alt="Footer Bottom" />
-          </div>
-  
-          <!-- Bumper -->
-          <div class="footer-bumper"></div>
-          
-          <!-- Footer Navigation Links -->
-          <div class="footerNav">
-              <ul>   
-                  <li><a href="rocka.html">Home</a></li>
-                  <li>|</li>
-                  <li><a href="about.html">Our History</a></li>
-                  <li>|</li>
-                  <li><a href="merch.html">Merch</a></li>
-                  <li>|</li>
-                  <li><a href="tour-dates.html">Tour Dates</a></li>
-                  <li>|</li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-                  <li>|</li>
-                  <li>©STAGEFRIGHT</li>
-              </ul>
-          </div>
-      </footer>
+  <!-- Footer -->
+  <body>
+    <footer class="footer">
+        <div class="footer-top-image">
+            <img src="footerheadimg.png" alt="Footer Heading" />
+        </div>
+
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/officialstagefrightband/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="https://x.com/fright_sta96486" target="_blank">
+                    <i class="fa-brands fa-twitter"></i></a>
+
+                <a href="https://www.youtube.com/channel/UCNrklXnl1g6ChVAZEOcw2cA" target="_blank">
+                    <i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom-image">
+            <img src="footerbottom.png" alt="Footer Bottom" />
+        </div>
+        <div class="footer-bumper"></div>
+
+        <div class="footerNav">
+            <ul>   
+                <li><a href="rocka.html">Home</a></li>
+                <li>|</li>
+                <li><a href="about.html">Our History</a></li>
+                <li>|</li>
+                <li><a href="merch.html">Merch</a></li>
+                <li>|</li>
+                <li><a href="tour-dates.html">Tour Dates</a></li>
+                <li>|</li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li>|</li>
+                <li>©STAGEFRIGHT</li>
+            </ul>
+        </div>
+    </footer>
   </body>

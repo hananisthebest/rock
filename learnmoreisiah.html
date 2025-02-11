@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="isiah.css">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="rocka.css"> 
     <link rel="stylesheet" href="learn-more.css">
   </head>
   <body style="background-color: #140329; display: flex; flex-direction: column; min-height: 100vh;">
@@ -56,47 +55,63 @@
 <script src="navbar.js"></script>
 
  
-    
-
-    <!--==================== ABOUT ====================-->
-    <section class="about section" id="about">
-      <div class="about__container container grid">
-        <h2 class="section__title-1">
-          <span>About Me.</span>
-        </h2>
-    
-        <div class="about__perfil">
-          <div class="about__image">
-            <img src="isiah.png" alt="image" class="about__img">
-    
-            <div class="about__shadow"></div>
-    
-            <div class="geometric-box"></div>
-    
-            <div class="about__box"></div>
-          </div>
-        </div>
-    
-        <div class="about__info">
-          <p class="about__description">
-            Passionate about writing <b>lyrics and </b> playing
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <!-- Wrapper to center content vertically and horizontally, with a slight upward shift -->
+        <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh; margin-top: -150px;">
+          <div class="about__container container grid">
+            <h2 class="section__title-1">
+              <span>About Me.</span>
+            </h2>
+      
+            <div class="about__perfil">
+              <div class="about__image">
+                <img src="isiah.png" alt="image" class="about__img">
+      
+                <div class="about__shadow"></div>
+      
+                <div class="geometric-box"></div>
+      
+                <div class="about__box"></div>
+              </div>
+            </div>
+      
+            <div class="about__info">
+              <p class="about__description">
+                Passionate about writing <b>lyrics and </b> playing
             <b>the drums</b>, I have years of
             experience songwriting and making beats!
-          </p>
-    
-          <ul class="about__list">
-            <li class="about__item">
-              <b>My Skills Are:</b> songwriting, playing the drums, composing music.
-            </li>
-          </ul>
-    
-          <div class="about__buttons">
-            <a href="contact-us.html" class="button">
-              <i class="ri-send-plane-line"></i> Contact Me
-            </a>
-    
-            
+              </p>
+      
+              <ul class="about__list">
+                <li class="about__item">
+                  <b>My Skills Are:</b> songwriting, playing the drums, composing music.
+                </li>
+              </ul>
+      
+              <div class="about__buttons">
+                <a href="contact-us.html" class="button">
+                  <i class="ri-send-plane-line"></i> Contact Us
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section> 
+      </section>
+      </body>
+      
+      <style>
+        /* Default styles */
+        .about__container {
+          width: 100%;  /* Makes the container take full width */
+        }
+      
+        /* Media query for larger screens */
+        @media (min-width: 1200px) {
+          .about__container {
+            width: 80%;  /* Makes the container 80% of the screen width on large screens */
+          }
+        }
+      </style>
+
+   

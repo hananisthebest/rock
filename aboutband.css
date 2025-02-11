@@ -1,4 +1,10 @@
-* {
+
+.navbar {
+  font-family: 'Rock Salt' !important;
+}
+
+
+*{
     font-family: Nunito, sans-serif;
   }
   

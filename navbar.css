@@ -36,8 +36,8 @@ nav {
   align-items: center;
   background: transparent;
   padding: 10px 12%;
-  font-family: 'Rock Salt', cursive;
-  font-weight: 700;
+  font-family: 'Rock Salt', cursive !important;
+  font-weight: 700 !important;
 }
 
 .hero-section { /* Adjust the first section below navbar */

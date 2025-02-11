@@ -105,7 +105,15 @@ button:hover {
 
 @media (max-height: 800px) {
     .youtube-video {
-        width: 35vw;  
-        height: 20vw; 
-        }
+        width: 60vw;  /* Slightly increased for better visibility */
+        height: 25vw; /* Adjusted height for better aspect ratio */
     }
+}
+
+@media (max-width: 600px) {
+    .youtube-video {
+        width: 90vw;  /* Uses most of the screen width */
+        height: 50vw; /* Maintains a good aspect ratio */
+    }
+}
+

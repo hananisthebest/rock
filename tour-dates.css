@@ -1,92 +1,54 @@
-/* Fullscreen Background */
-body {
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background 0.5s ease-in-out;
-}
-
-/* Blur Effect Overlay */
-.carousel-wrapper::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  filter: blur(15px);
-  opacity: 0.9;
-  z-index: -1;
-}
-
-/* Carousel Container */
-.carousel-container {
-  position: relative;
-  text-align: center;
+/* Carousel Wrapper */
+.carousel-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-
-/* "PLACE" Above */
-.carousel-text {
-  font-size: 40px;
-  font-weight: bold;
+  background: black;
   color: white;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  text-align: center;
 }
 
-/* Scrollable Horizontal Carousel */
-.carousel {
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  display: flex;
-  width: 50%;
-  max-width: 600px;
-  border-radius: 10px;
-  white-space: nowrap;
-  scrollbar-width: none; /* Hide scrollbar */
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  overflow: hidden;
 }
 
-.carousel::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome/Safari */
-}
-
-/* Track */
+/* Carousel Track */
 .carousel-track {
   display: flex;
-  gap: 10px;
   transition: transform 0.5s ease-in-out;
 }
 
-/* Images */
+/* Carousel Images */
 .carousel-image {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  opacity: 0.5;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  scroll-snap-align: center;
-  flex: 0 0 auto;
+  flex-shrink: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-/* Active Image Pops Out */
-.carousel-image.active {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-/* "TIME • DATE" Below */
-.carousel-info {
-  font-size: 24px;
+/* Text Elements */
+.carousel-text, .carousel-info {
+  font-size: 2rem;
   font-weight: bold;
-  color: white;
-  margin-top: 20px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+/* Glitch Effect (initial state) */
+.carousel-info {
+  position: relative;
+  display: inline-block;
+  animation: glitch 1.5s infinite alternate;
+}
+
+/* Keyframes for Glitch Effect */
+@keyframes glitch {
+  0% { text-shadow: 2px 2px red, -2px -2px blue; }
+  50% { text-shadow: -2px -2px red, 2px 2px blue; }
+  100% { text-shadow: 2px -2px blue, -2px 2px red; }
 }

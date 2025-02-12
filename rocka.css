@@ -103,11 +103,17 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (max-width: 1600px) {
-        .youtube-video {
-            width: 60vw;  
-            height: 33.75vw; 
-            max-width: 860px; 
-            max-height: 485px;
-        }
+@media (max-height: 800px) {
+    .youtube-video {
+        width: 60vw;  /* Slightly increased for better visibility */
+        height: 25vw; /* Adjusted height for better aspect ratio */
     }
+}
+
+@media (max-width: 600px) {
+    .youtube-video {
+        width: 90vw;  /* Uses most of the screen width */
+        height: 50vw; /* Maintains a good aspect ratio */
+    }
+}
+

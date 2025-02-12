@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
+*{
+  background-color: #140329;
+  color: white;
+}
+
+p{
+color:white !important;
+}
+
+
+
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -68,7 +80,7 @@ body {
   
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: white;
   transition: background-color .4s; /* Pour le Dark theme */
 }
 
@@ -76,7 +88,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--title-color);
+  color: white;
   font-weight: var(--font-bold);
 }
 
@@ -104,7 +116,7 @@ img {
 
 .change-theme {
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: white;
   cursor: pointer;
   transition: color .3s;
 }
@@ -179,7 +191,6 @@ img {
 /*=============== BUTTON ===============*/
 .button,
 .button__ghost {
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,21 +199,29 @@ img {
 
 .button {
   text-decoration: none;
-  background-color: var(--black-color);
+  background-color: rgba(255, 105, 180, 0.6); /* Pink color with transparency */
   padding: 1.1rem 1.5rem;
-  color: var(--white-color);
-  font-weight: var(--font-medium);
+  color: white;
+  font-weight: 700; /* Bold font weight */
+  font-size: 1.5rem; /* Larger font size */
   border-radius: 0.75rem;
-  transition: background-color 0.4s;
+  transition: background-color 0.4s, transform 0.4s; /* Added transform transition for smooth scale effect */
+  text-align: center; /* Ensures the text is centered */
+  line-height: 1; /* Ensures text is vertically centered */
 }
 
 .button i {
-text-decoration: none;
-  font-size: 1.25rem;
+  text-decoration: none;
+  font-size: 1.5rem; /* Increased icon font size to match text */
+  font-weight: 800;
+  display: inline-block;
 }
 
 .button:hover {
-  background-color: var(--first-color);
+  background-color: rgba(255, 105, 180, 1); /* Pink color with full opacity */
+  transform: scale(1.1); /* Button grows slightly on hover */
+  text-decoration: none;
+  color:white;
 }
 
 .button__ghost {
@@ -214,12 +233,15 @@ text-decoration: none;
 }
 
 .button__ghost i {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .button__ghost:hover {
   border: 3px solid var(--first-color);
 }
+
+
+
 
 /*=============== ABOUT ===============*/
 .about {

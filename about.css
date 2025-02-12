@@ -91,7 +91,7 @@ body {
   justify-content: center;
   height: 500px;
   gap: 10px;
-  margin-top: 200px; /* Adjust this value to move the container down */
+  margin-top: 20%; /* Adjust this value to move the container down */
 
   > div {
     flex: 0 0 120px;

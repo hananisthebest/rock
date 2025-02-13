@@ -74,7 +74,6 @@
   margin:  0;
   padding: 0;
   box-sizing: border-box;
-  justify-content: center !important; 
 }
 
 body {
@@ -92,6 +91,7 @@ body {
   justify-content: center;
   height: 500px;
   gap: 10px;
+  margin-top: 20%; /* Adjust this value to move the container down */
 
   > div {
     flex: 0 0 120px;

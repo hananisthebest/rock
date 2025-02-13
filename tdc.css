@@ -110,3 +110,29 @@
         margin-top: -15px
     }
 }
+
+/* Responsive Scaling for Mobile */
+@media screen and (max-width: 600px) {
+    .slide-container {
+        width: 90%; /* Decrease width for smaller screens */
+        max-width: 360px; /* Set a max width */
+        height: 250px; /* Adjust the height */
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+
+    .slides {
+        flex-direction: column; /* Stack images vertically */
+    }
+
+    .buttons span {
+        font-size: 28px; /* Adjust button size for mobile */
+    }
+
+    .buy-tickets-btn {
+        width: 30%; /* Make the button full width */
+        font-size: 14px; /* Adjust text size */
+        padding: 12px;
+        margin-top: -1px;
+    }
+}

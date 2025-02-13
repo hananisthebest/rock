@@ -1,12 +1,63 @@
+/*=============== BUTTON ===============*/
+.button,
+.button__ghost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.button {
+  text-decoration: none;
+  background-color: rgba(255, 105, 180, 0.6); /* Pink color with transparency */
+  padding: 1.1rem 1.5rem;
+  color: white;
+  font-weight: 700; /* Bold font weight */
+  font-size: 1.5rem; /* Larger font size */
+  border-radius: 0.75rem;
+  transition: background-color 0.4s, transform 0.4s; /* Added transform transition for smooth scale effect */
+  text-align: center; /* Ensures the text is centered */
+  line-height: 1; /* Ensures text is vertically centered */
+}
+
+.button i {
+  text-decoration: none;
+  font-size: 1.5rem; /* Increased icon font size to match text */
+  font-weight: 800;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: rgba(255, 105, 180, 1); /* Pink color with full opacity */
+  transform: scale(1.1); /* Button grows slightly on hover */
+  text-decoration: none;
+  color:white;
+}
+
+.button__ghost {
+  border: 3px solid var(--black-color);
+  color: var(--black-color);
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  transition: border 0.4s, color 0.4s;
+}
+
+.button__ghost i {
+  font-size: 1.5rem;
+}
+
+.button__ghost:hover {
+  border: 3px solid var(--first-color);
+}
+
+
+
+
+
 
 .navbar {
   font-family: 'Rock Salt' !important;
 }
-
-
-*{
-    font-family: Nunito, sans-serif;
-  }
   
   .responsive-container-block {
     min-height: 75px;
@@ -69,7 +120,7 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
-    color: rgb(176, 98, 255);
+    color: rgba(255, 105, 180, 1);
     padding-top: 0px;
     padding-right: 10px;
     padding-bottom: 0px;
@@ -234,7 +285,7 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 430px;
-    background-color: rgb(176, 98, 255);
+    background-color:rgba(255, 105, 180, 1);
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;

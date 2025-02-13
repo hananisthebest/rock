@@ -67,9 +67,9 @@
   <div class="container">
     <div>
       <div class="content">
-        <h2 id="metal-mania-band">The Band</h2>
-        <span id="metal-mania-band"></span>
-        <a href="aboutband.html">
+        <h2 id="metal-mania-band">Mikah Ellis</h2>
+        <span id="metal-mania-band">Bassist</span>
+        <a href="learnmoremikah.html">
         <button class="button-62" role="button">Learn More!</button>
         </a>
       </div>
@@ -104,9 +104,9 @@
     
       <div>
       <div class="content">
-        <h2 id="metal-mania-band">Mikah Ellis</h2>
+        <h2 id="metal-mania-band">The Band</h2>
         <span id="metal-mania-band">Bassist</span>
-        <a href="learnmoremikah.html">
+        <a href="aboutband.html">
         <button class="button-62" role="button">Learn More!</button>
         </a> 
       </div> 
@@ -161,15 +161,38 @@
   </footer>
 
   <style>
-    /* Default styles */
-    .about__container {
-      width: 100%;  /* Makes the container take full width */
-    }
-  
-    /* Media query for larger screens */
-    @media (min-width: 1200px) {
-      .about__container {
-        width: 80%;  /* Makes the container 80% of the screen width on large screens */
-      }
-    }
+
+   /* Basic container style */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Makes the items wrap to the next line on smaller screens */
+  justify-content: space-around; /* Distributes space evenly around items */
+  padding: 20px;
+  width: 100%;
+}
+
+/* Style for each item inside the container */
+.container > div {
+  flex: 1 1 280px; /* Each item takes a minimum of 280px and grows/shrinks as needed */
+  margin: 10px; /* Adds space between the items */
+  text-align: center;
+  transition: flex-grow 0.3s ease, transform 0.3s ease; /* Smooth transition for size and transform */
+}
+
+.container > div:hover {
+  flex-grow: 2; /* Make the item grow (you can adjust the number) */
+  transform: scale(1.1); /* Slightly enlarge the item */
+}
+
+  .container > div {
+    width: 100%; /* Makes each item take up full width on small screens */
+  }
+
+/* Optional - For large screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 80%; /* Adjusts the width to 80% of the screen on large screens */
+    margin: 0 auto; /* Centers the container */
+  }
+}
   </style>

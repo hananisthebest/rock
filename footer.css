@@ -1,146 +1,122 @@
 /* General Reset */
 * {
-  padding: 0;
+  padding-top: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* Footer Styles */
-footer {
+/* Footer Styling */
+.footer {
+width: 100%;
   background-color: #000000;
-}
-
-/* Footer Container */
-.footerContainer {
-  width: 100%;
-  padding: 40px 0 15px;
-}
-
-/* Social Icons */
-.socialIcons {
-  display: flex;
-  justify-content: center;
-  gap: 50px; /* Reduced gap */
-  margin: 0;
-  flex-wrap: wrap; /* Prevents overflow */
-}
-
-.socialIcons a {
-  text-decoration: none;
-  padding: 12px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.socialIcons a i {
-  font-size: 1.7em;
-  color: rgb(0, 0, 0);
-  transition: transform 0.2s ease-in-out;
-}
-
-/* Social Icons Hover Effect */
-.socialIcons a:hover {
-  background-color: #000000;
-  transition: 0.3s;
-}
-
-.socialIcons a:hover i {
   color: white;
-  transform: scale(1.1);
-}
-
-/* Footer Navigation */
-.footer-bottom-image {
-  padding-top: 20px;
-}
-
-.footer-bumper {
-  height: 1px;
-  background-color: #c4c4c4;
-  border-top: 1px solid #afafaf;
-}
-
-.footerNav {
-  margin: 20px 0;
-}
-
-.footerNav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  gap: 8px; /* Closer spacing */
-  padding-bottom: 10px;
-  flex-wrap: wrap; /* Ensures better wrapping on small screens */
-}
-
-.footerNav ul li {
-  font-size: 0.9rem; /* Slightly smaller for better fit */
-  color: white;
+  text-align: center;
   font-family: Arial, sans-serif;
 }
 
-.footerNav ul li a {
-  text-decoration: none;
+/* Top Image Styling */
+.footer-top-image img {
+  width: 350px; /* Default size */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Keep the 10px space below the image */
+}
+
+/* Social Icons Styling */
+.socialIcons {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center; /* Center the icons horizontally */
+  margin-top: -25px; /* Move the icons closer to the image */
+}
+
+.socialIcons a {
   color: white;
-  transition: transform 0.2s, color 0.2s;
+  font-size: 28px;
+  margin: 0 12px; /* Space between icons */
+  transition: 0.3s;
+}
+
+.socialIcons a:hover {
+  color: #ff00bf;
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.footer-bottom h4 {
+  font-size: 14px;
+  color: #bbb; /* Slightly greyish color */
+  margin-bottom: 8px;
+}
+
+.footer-bottom h3 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff; /* Whiter bold text */
+  margin-bottom: 5px;
+}
+
+/* Footer Navigation */
+.footerNav ul {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.footerNav ul li {
+  display: inline;
+  margin: 0 8px;
+  font-size: 15px
+}
+
+.footerNav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .footerNav ul li a:hover {
-  color: #d3d3d3;
-  transform: scale(1.1);
+  color: #ff00bf;
 }
 
-.footerNav ul li a:active {
-  color: #bfbfbf;
-  transform: scale(1.0);
+.footer-bumper {
+  height: 5px;
+  background-color: #222;
+  margin-top: -4px;
 }
 
-
-/* Responsive Design */
-@media (max-width: 700px) {
-  .footerNav ul {
-    flex-direction: column;
-    gap: 6px; /* Closer spacing */
-    text-align: center;
+/* Media Queries for Responsive Design */
+@media (max-width: 1600px) {
+  .footer-top-image img {
+    width: 250px; /* Adjust logo size */
   }
-  
-  .socialIcons {
-    gap: 20px; /* Tighter for mobile */
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding: 15px 0;
+  }
+  .footer-top-image img {
+    width: 190px; /* Smaller logo */
   }
   
   .socialIcons a {
-    padding: 10px;
+    font-size: 20px; /* Smaller icons on smaller screens */
+    margin-top: 15px;
   }
-
-  .socialIcons a i {
-    font-size: 1.5em; /* Slightly smaller */
+  .footer-bottom h4 {
+    font-size: 10px;
   }
-
-}
-
-.footer-top-image img {
-  width: 100%;
-  display: block;
-  object-fit: cover;  /* Ensure image fills container without stretching */
-  max-height: 400px;  /* Set a max height to control overflow */
-}
-
-/* Bottom Image */
-.footer-bottom-image img {
-  width: 100%;
-  display: block;
-  object-fit: cover;  /* Prevent stretching */
-  max-height: 200px;  /* Limit height for bottom image */
-}
-
-/* Responsive Design */
-@media (max-width: 800px) {
-  .footer-top-image img, .footer-bottom-image img {
-    max-height: none;  /* Remove the max height on smaller screens */
+  .footer-bottom h3 {
+    font-size: 8px;
+  }
+  .footerNav ul li {
+    display: inline;
+    margin: 0 1px;
+    font-size: 10px;
   }
 }
 

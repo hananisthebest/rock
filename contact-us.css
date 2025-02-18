@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,6 @@ body {
   display: grid;
   place-items: center;
   background: #100721;
- 
   font-weight: 400;
 }
 
@@ -22,98 +22,92 @@ body {
   justify-content: center;
   height: 350px;
   gap: 25px;
+}
 
- .button62 {
-    padding-top: 10em;
-    background: linear-gradient(to bottom right, #ce68ec3b, #ff51d989);
-    border: 0;
-    border-radius: 12px;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+.container > div {
+  flex: 0 0 230px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  position: relative;
+  overflow: hidden;
+}
+
+.container > div:nth-of-type(1) {
+  background: url("book\ us.jpg") no-repeat 50% / cover;
+}
+.container > div:nth-of-type(2) {
+  background: url("Screenshot\ 2025-01-21\ at\ 2.42.27\ PM.png") no-repeat 50% / cover;
+}
+.container > div:nth-of-type(3) {
+  background: url("Screenshot\ 2025-01-21\ at\ 2.42.51\ PM.png") no-repeat 50% / cover;
+}
+
+/* Make the buttons fill the entire div */
+.container > div a.button-62 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3); /* Optional overlay effect */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  text-align: center;
+}
+
+.container > div a.button-62:hover {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.3), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.3), .125rem .125rem 1rem rgba(120, 17, 148, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;  /* Stack the items vertically */
+    align-items: center;  /* Center the items */
+    gap: 15px;  /* Space between the stacked items */
+    margin-top: 20px;  /* Adjust the gap on smaller screens */
+    width: 100%;  /* Ensure full width */
+  }
+
+  .container > div {
+    width: 100%;  /* Make the divs take full width */
+    height: 60px;  /* Adjust the height of each div */
+    margin-bottom: 10px;  /* Space between each card */
+    display: flex;  /* Use flex to center the content */
+    justify-content: center;  /* Center the content inside */
+    background-size: cover;  /* Ensure the background images still cover */
+    background: none;  /* Remove background image on mobile */
+  }
+
+  .container > div a.button-62 {
+    width: 100%;  /* Make button fill the full width of the div */
+    height: 100%;  /* Make button fill the full height of the div */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay effect */
+    color: #fff;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 2.5;
-    outline: transparent;
-    padding: 0 1rem;
-    text-align: center;
+    font-weight: bold;
     text-decoration: none;
-    transition: box-shadow .2s ease-in-out;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    background-color: #8e44ad; /* Background color for text button */
+    border-radius: 5px;
   }
-  
-  .button-62:not([disabled]):focus {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(158, 31, 193, 0.5), .125rem .125rem 1rem rgba(252, 90, 255, 0.5);
-  }
-  
-  .button-62:not([disabled]):hover {
+
+  .container > div a.button-62:hover {
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(120, 17, 148, 0.5);
   }
-   
-  > div {
-    flex: 0 0 230px;
-    border-radius: 0.5rem;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-    box-shadow: 1px 5px 15px #1e0e3e;
-    position: relative;
-    overflow: hidden;
-
-    &:nth-of-type(1) {
-      background: url("book\ us.jpg")
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(2) {
-      background: url("Screenshot\ 2025-01-21\ at\ 2.42.27\ PM.png")
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(3) {
-      background: url("Screenshot\ 2025-01-21\ at\ 2.42.51\ PM.png")
-        no-repeat 50% / cover;
-    }
-
-
-    .content {
-      font-size: 1.5rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 15px;
-      opacity: 0;
-      flex-direction: column;
-      height: 100%;
-      justify-content: flex-end;
-      background: rgb(2, 2, 46);
-      background: linear-gradient(
-        0deg,
-        rgba(83, 10, 103, 0.676) 0%,
-        rgba(132, 14, 120, 0) 100%
-      );
-      transform: translatey(100%);
-      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-      visibility: hidden;
-
-      span {
-        display: block;
-        margin-top: 5px;
-        font-size: 1.2rem;
-      }
-    }
-
-    &:hover {
-      flex: 0 0 250px;
-      box-shadow: 1px 3px 15px #7645d8;
-      transform: translatey(-30px);
-    }
-
-    &:hover .content {
-      opacity: 1;
-      transform: translatey(0%);
-      visibility: visible;
-    }
-  }
 }
+

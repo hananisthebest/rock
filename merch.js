@@ -1,74 +1,79 @@
-let cart = [];
-let cartCount = document.getElementById('cartCount');
-let cartItemCount = document.getElementById('cartItemCount');
-let cartItems = document.getElementById('cartItems');
-let cartTotal = document.getElementById('cartTotal');
-
-// Sample product data
-const products = [
-  { id: 1, name: 'T-shirt', price: 20 },
-  { id: 2, name: 'Hat', price: 15 },
-  { id: 3, name: 'Mug', price: 10 }
-];
-
-// Add products to the page (example)
-const root = document.getElementById('root');
-products.forEach(product => {
-  const productDiv = document.createElement('div');
-  productDiv.classList.add('box');
-  productDiv.innerHTML = `
-    <h3>${product.name}</h3>
-    <p>$${product.price}</p>
-    <button onclick="addToCart(${product.id})">Add to Cart</button>
-  `;
-  root.appendChild(productDiv);
-});
-
-// Open the cart modal
-function openCart() {
-  const cartModal = document.getElementById('cartModal');
-  cartModal.style.display = 'block';
-  updateCart();
-}
-
-// Close the cart modal
-function closeCart() {
-  const cartModal = document.getElementById('cartModal');
-  cartModal.style.display = 'none';
-}
-
-// Add item to the cart
-function addToCart(productId) {
-  const product = products.find(p => p.id === productId);
-  if (product) {
-    cart.push(product);
-    updateCart();
+const product = [
+  {
+    id: 0,
+    image: 'image-path/gg-1.jpg',
+    title: 'Z Flip Foldable Mobile',
+    price: 120,
+  },
+  {
+    id: 1,
+    image: 'image-path/hh-2.jpg',
+    title: 'Air Pods Pro',
+    price: 60,
+  },
+  {
+    id: 2,
+    image: 'image-path/ee-3.jpg',
+    title: '250D DSLR Camera',
+    price: 230,
+  },
+  {
+    id: 3,
+    image: 'image-path/aa-1.jpg',
+    title: 'Head Phones',
+    price: 100,
   }
+];
+const categories = [...new Set(product.map((item) => { return item }))]
+let i = 0;
+document.getElementById('root').innerHTML = categories.map((item) => {
+  var { image, title, price } = item;
+  return (
+    `<div class='box'>
+      <div class='img-box'>
+        <img class='images' src=${image}></img>
+      </div>
+      <div class='bottom'>
+        <p>${title}</p>
+        <h2>$ ${price}.00</h2>` +
+        "<button onclick='addtocart(" + (i++) + ")'>Add to cart</button>" +
+      `</div>
+    </div>`
+  )
+}).join('')
+
+var cart = [];
+
+function addtocart(a) {
+  cart.push({ ...categories[a] });
+  displaycart();
+}
+function delElement(a) {
+  cart.splice(a, 1);
+  displaycart();
 }
 
-// Remove item from the cart
-function removeFromCart(index) {
-  cart.splice(index, 1);
-  updateCart();
-}
-
-// Update the cart display
-function updateCart() {
-  cartCount.textContent = cart.length;
-  cartItemCount.textContent = cart.length;
-  cartItems.innerHTML = '';
-
-  let total = 0;
-  cart.forEach((item, index) => {
-    const cartItem = document.createElement('div');
-    cartItem.classList.add('cart-item');
-    cartItem.innerHTML = `
-      <p>${item.name} - $${item.price}</p>
-      <p class="remove" onclick="removeFromCart(${index})">Remove</p>
-    `;
-    cartItems.appendChild(cartItem);
-    total += item.price;
-  });
-
-  cartTotal.textContent = total.toFixed(2);
+function displaycart() {
+  let j = 0, total = 0;
+  document.getElementById("count").innerHTML = cart.length;
+  if (cart.length == 0) {
+    document.getElementById('cartItem').innerHTML = "Your cart is empty";
+    document.getElementById("total").innerHTML = "$ " + 0 + ".00";
+  }
+  else {
+    document.getElementById("cartItem").innerHTML = cart.map((items) => {
+      var { image, title, price } = items;
+      total = total + price;
+      document.getElementById("total").innerHTML = "$ " + total + ".00";
+      return (
+        `<div class='cart-item'>
+          <div class='row-img'>
+            <img class='rowimg' src=${image}>
+          </div>
+          <p style='font-size:12px;'>${title}</p>
+          <h2 style='font-size: 15px;'>$ ${price}.00</h2>` +
+        "<i class='fa-solid fa-trash' onclick='delElement(" + (j++) + ")'></i></div>"
+      );
+    }).join('');
+  }
 }

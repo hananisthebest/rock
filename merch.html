@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="merch.css">
+  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+  <title>Merch</title>
+</head>
+
+<body>
+  <div class="header">
+    <p class="logo">LOGO</p>
+    <div class="cart" onclick="openCart()"><i class="fa-solid fa-cart-shopping"></i>
+      <p id="cartCount">0</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="root"></div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <span class="close" onclick="closeCart()">×</span>
+      <h2>YOUR CART (<span id="cartItemCount">0</span> items)</h2>
+      <div id="cartItems"></div>
+      <div class="subtotal">
+        <p>Subtotal: $<span id="cartTotal">0.00</span></p>
+      </div>
+      <button id="checkoutBtn">CHECKOUT</button>
+    </div>
+  </div>
+
+  <script src="merch.js"></script>
+</body>
+
+</html>

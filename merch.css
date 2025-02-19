@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+  }
+  
+  .header {
+    height: 80px;
+    width: 100%;
+    background-color: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+  
+  .header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: 15px;
+  }
+  
+  .cart {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+    cursor: pointer;
+  }
+  
+  .fa-solid {
+    color: hotpink;
+  }
+  
+  .cart p {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: hotpink;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  
+  #root {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .cart-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .cart-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: hotpink;
+  }
+  
+  #cartItems {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-item p {
+    margin: 0;
+  }
+  
+  .cart-item .remove {
+    color: hotpink;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .subtotal {
+    margin-top: 20px;
+  }
+  
+  #checkoutBtn {
+    width: 100%;
+    border: none;
+    background-color: hotpink;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #checkoutBtn:hover {
+    background-color: #333;
+  }
+  
+  @media only screen and (max-width: 599px) {
+    .cart-content {
+      width: 90%;
+    }
+  }
+  

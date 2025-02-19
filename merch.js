@@ -1,17 +1,17 @@
 let cart = [];
-let cartCount = document.getElementById('cartCount');
-let cartItemCount = document.getElementById('cartItemCount');
-let cartItems = document.getElementById('cartItems');
-let cartTotal = document.getElementById('cartTotal');
+const cartCount = document.getElementById('cartCount');
+const cartItemCount = document.getElementById('cartItemCount');
+const cartItems = document.getElementById('cartItems');
+const cartTotal = document.getElementById('cartTotal');
+const cartSidebar = document.getElementById('cartSidebar');
+const checkoutBtn = document.getElementById('checkoutBtn');
 
-// Sample product data
 const products = [
   { id: 1, name: 'T-shirt', price: 20 },
   { id: 2, name: 'Hat', price: 15 },
   { id: 3, name: 'Mug', price: 10 }
 ];
 
-// Add products to the page (example)
 const root = document.getElementById('root');
 products.forEach(product => {
   const productDiv = document.createElement('div');
@@ -24,20 +24,15 @@ products.forEach(product => {
   root.appendChild(productDiv);
 });
 
-// Open the cart modal
 function openCart() {
-  const cartModal = document.getElementById('cartModal');
-  cartModal.style.display = 'block';
+  cartSidebar.classList.add('active');
   updateCart();
 }
 
-// Close the cart modal
 function closeCart() {
-  const cartModal = document.getElementById('cartModal');
-  cartModal.style.display = 'none';
+  cartSidebar.classList.remove('active');
 }
 
-// Add item to the cart
 function addToCart(productId) {
   const product = products.find(p => p.id === productId);
   if (product) {
@@ -46,18 +41,16 @@ function addToCart(productId) {
   }
 }
 
-// Remove item from the cart
 function removeFromCart(index) {
   cart.splice(index, 1);
   updateCart();
 }
 
-// Update the cart display
 function updateCart() {
   cartCount.textContent = cart.length;
   cartItemCount.textContent = cart.length;
   cartItems.innerHTML = '';
-
+  
   let total = 0;
   cart.forEach((item, index) => {
     const cartItem = document.createElement('div');
@@ -69,6 +62,10 @@ function updateCart() {
     cartItems.appendChild(cartItem);
     total += item.price;
   });
-
+  
   cartTotal.textContent = total.toFixed(2);
 }
+
+checkoutBtn.addEventListener('click', () => {
+  alert('We cannot take orders right now.');
+});

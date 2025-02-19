@@ -68,46 +68,14 @@ body {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.3), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.3), .125rem .125rem 1rem rgba(120, 17, 148, 0.3);
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;  /* Stack the items vertically */
-    align-items: center;  /* Center the items */
-    gap: 15px;  /* Space between the stacked items */
-    margin-top: 20px;  /* Adjust the gap on smaller screens */
-    width: 100%;  /* Ensure full width */
-  }
 
-  .container > div {
-    width: 100%;  /* Make the divs take full width */
-    height: 60px;  /* Adjust the height of each div */
-    margin-bottom: 10px;  /* Space between each card */
-    display: flex;  /* Use flex to center the content */
-    justify-content: center;  /* Center the content inside */
-    background-size: cover;  /* Ensure the background images still cover */
-    background: none;  /* Remove background image on mobile */
-  }
-
-  .container > div a.button-62 {
-    width: 100%;  /* Make button fill the full width of the div */
-    height: 100%;  /* Make button fill the full height of the div */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.5); /* Optional overlay effect */
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    transition: background 0.3s ease-in-out;
-    background-color: #8e44ad; /* Background color for text button */
-    border-radius: 5px;
-  }
-
-  .container > div a.button-62:hover {
-    background: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(120, 17, 148, 0.5);
-  }
+.bottomimage-container {
+  width: 100%;
+  overflow: hidden; 
 }
 
+.bottomcontact-image {
+  width: 100%;
+  height: auto; /* Maintains the aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}

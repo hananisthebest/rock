@@ -157,3 +157,27 @@ button:hover{
   cursor: pointer;
   color: #333;
 }
+
+body {
+  background-color: white !important;
+}
+
+.top-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.menu-button svg {
+  fill: white;
+}
+
+.sidebar {
+  display: none;
+}

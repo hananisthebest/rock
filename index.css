@@ -35,8 +35,8 @@ body {
     transform: translate(-50%, -50%);
     width: 70vw;  
     height: 39.375vw; 
-    max-width: 960px; 
-    max-height: 540px;
+    max-width: 80vw;  /* Prevents excessive width */
+    max-height: 45vw; /* Ensures good aspect ratio */
 }
 
 /* Scroll Indicator */
@@ -54,11 +54,10 @@ body {
 /* Bounce Animation */
 @keyframes bounce {
     0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(15px); }  /* Increased bounce */
+    50% { transform: translateX(-50%) translateY(15px); }  
 }
 
-
-/* mmerch caroseul */
+/* Merch Carousel */
 .merch-carousel {
     position: relative;
     width: 100%;
@@ -103,17 +102,277 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Adjustments for smaller screens */
 @media (max-height: 800px) {
     .youtube-video {
-        width: 60vw;  /* Slightly increased for better visibility */
-        height: 25vw; /* Adjusted height for better aspect ratio */
+        width: 65vw;
+        height: 36.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .youtube-video {
+        width: 80vw;
+        height: 45vw;
     }
 }
 
 @media (max-width: 600px) {
     .youtube-video {
-        width: 90vw;  /* Uses most of the screen width */
-        height: 50vw; /* Maintains a good aspect ratio */
+        width: 90vw;
+        height: 50.625vw; /* Maintains 16:9 aspect ratio */
     }
 }
 
+.view-merch-link {
+    z-index: 1000;
+    padding-left: 75%;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000000; 
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+    
+    .view-merch-link:hover {
+      color: #000000; 
+    }
+    @media screen and (max-width: 1000px) {
+        .view-merch-link {
+            font-size: 12px;
+        }
+    }
+    
+    .product {
+      margin-top: -10px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .product-category {
+      padding: 0 10vw;
+      font-family: "Oswald";
+      font-size: 40px;
+      font-weight: 800;
+      color:black;
+      margin-bottom: 40px;
+      text-transform: capitalize;
+    }
+    
+    .product-container {
+      padding: 0 10vw;
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+    
+    .product-container::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .product-card {
+      flex: 0 0 auto;
+      width: 350px;
+      height: 450px;
+      margin-right: 40px;
+    }
+    
+    .product-image {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      overflow: hidden;
+    }
+    
+    .product-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .card-btn {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      width: 90%;
+      text-transform: capitalize;
+      border: none;
+      outline: none;
+      background: #fff;
+      border-radius: 5px;
+      transition: 0.5s;
+      cursor: pointer;
+      opacity: 0;
+    }
+    
+    .product-card:hover .card-btn {
+      opacity: 1;
+    }
+    
+    .card-btn:hover {
+      background: #ff7d7d;
+      color: #fff;
+    }
+    
+    .product-info {
+      width: 100%;
+      height: 100px;
+      padding-top: 10px;
+    }
+    
+    .product-short-description {
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      font-family: "Oswald";
+      font-size: 20px;
+      font-weight: 600;
+      color:rgb(43, 43, 43);
+      overflow: hidden;
+      opacity: 0.66;
+      text-transform: capitalize;
+      margin: 5px 0;
+    }
+    
+    .price {
+      font-weight: 900;
+      font-size: 20px;
+      color:rgb(14, 14, 14)
+    }
+    
+    .actual-price {
+      margin-left: 20px;
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+    
+    .pre-btn,
+    .nxt-btn {
+      border: none;
+      width: 10vw;
+      height: 100%;
+      position: absolute;
+      top: 50%; /* Vertically center */
+      transform: translateY(-50%); /* Ensure perfect vertical centering */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+      cursor: pointer;
+      z-index: 8;
+    }
+    
+    .pre-btn {
+      left: 0;
+      transform: translateY(-50%) rotate(180deg); /* Keep rotation and ensure vertical centering */
+    }
+    
+    .nxt-btn {
+      right: 0;
+    }
+    
+    .pre-btn img,
+    .nxt-btn img {
+      opacity: 0.4; /* Updated opacity to 0.4 */
+      transition: opacity 0.3s ease-in-out; /* Smooth hover transition */
+    }
+    
+    .pre-btn:hover img,
+    .nxt-btn:hover img {
+      opacity: 1;
+    }
+    
+    /* Prevent the focus outline when clicked */
+    .pre-btn:focus,
+    .nxt-btn:focus {
+      outline: none;
+    }
+    
+    .collection-container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+    
+    .collection {
+      position: relative;
+    }
+    
+    .collection img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .collection p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      font-size: 50px;
+      text-transform: capitalize;
+    }
+    
+    .collection:nth-child(3) {
+      grid-column: span 2;
+      margin-bottom: 10px;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .theband-image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      .theband-button {
+        position: absolute;
+        font-family: arial;
+        top: 57%;
+        left: 49%;
+        transform: translate(-50%, -40%);
+        background-color: rgba(255, 105, 180, 0.6); /* Pink color with transparency */
+        color: white;
+        font-size: 2.4rem; /* Adjust font size */
+        padding: 15px 30px;
+        border: none;
+        border-radius: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      
+      .theband-button:hover {
+        background-color: rgba(255, 105, 180, 0.75); /* Solid pink when hovered */
+        color:white;
+        text-decoration: none;
+        transform: translate(-50%, -40%) scale(1.1); /* Slight scaling on hover */
+      }
+      
+      @media (max-width: 1500px) {
+        .theband-button {
+        font-size: 1.5rem; /* Adjust font size */
+        padding: 10px 20px;
+       
+        }
+      }
+      
+      @media (max-width: 1000px) {
+        .theband-button {
+          font-size: 0.6rem; /* Smaller font size for smaller screens */
+          top: 58%;
+          padding: 4px 10px;
+        }
+      }

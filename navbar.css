@@ -24,8 +24,9 @@ body {
 }
 
 /* Navbar styles */
+/* Navbar styles */
 nav {
-  position: fixed; /* Fixed position to stay on top */
+  position: absolute; /* Changed from fixed to absolute */
   top: 0;
   left: 0;
   width: 100%;
@@ -38,6 +39,7 @@ nav {
   font-family: 'Rock Salt', cursive !important;
   font-weight: 700 !important;
 }
+
 
 .hero-section { 
   padding-top: 80px; /* Adjust based on navbar height */
@@ -67,7 +69,7 @@ nav {
 
 /* Sidebar - hidden by default */
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: -250px; /* Start off-screen */
   width: 250px;
@@ -99,7 +101,7 @@ nav {
   border: none !important;
   cursor: pointer !important;
   display: none; /* Hidden by default */
-  position: fixed !important; /* Fixed to the side */
+  position: absolute !important; /* Fixed to the side */
   top: 40px; /* Align with navbar */
   right: 50px; /* Right side */
   z-index: 1001; /* Above navbar */

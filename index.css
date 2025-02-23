@@ -104,8 +104,8 @@ button:hover {
 /* Adjustments for smaller screens */
 @media (max-height: 800px) {
     .youtube-video {
-        width: 65vw;
-        height: 36.5vw;
+        min-width: 58vw;
+        min-height: 30.5vw;
     }
 }
 
@@ -113,13 +113,6 @@ button:hover {
     .youtube-video {
         width: 80vw;
         height: 45vw;
-    }
-}
-
-@media (max-width: 600px) {
-    .youtube-video {
-        width: 90vw;
-        height: 50.625vw; /* Maintains 16:9 aspect ratio */
     }
 }
 

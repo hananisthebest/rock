@@ -33,20 +33,19 @@ body {
     top: 50%;  
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70vw;  
-    height: 39.375vw; 
-    max-width: 80vw;  /* Prevents excessive width */
-    max-height: 45vw; /* Ensures good aspect ratio */
+    width: 56vw !important;  
+    height: 28.375vw !important; 
+    max-width: 62vw !important;  /* Prevents excessive width */
+    max-height: 30vw !important; /* Ensures good aspect ratio */
 }
 
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 60px;  
-    font-weight:bold;  
+    font-size: 80px;  
     color: white;
     animation: bounce 1.5s infinite;
 }

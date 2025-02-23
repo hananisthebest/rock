@@ -8,13 +8,13 @@
 
 body {
   background-color: #140329;
-  font-family: 'Arial', sans-serif;  /* Use a default font for the rest of the page */
+  font-family: 'Arial', sans-serif; 
   color: #bbbbbb;
 }
 
 /* Logo */
 .logo {
-  width: 125px;
+  width: 125px; /* Default size */
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -24,40 +24,32 @@ body {
 }
 
 /* Navbar styles */
-/* Navbar styles */
 nav {
-  position: absolute; /* Navbar starts at the top and overlaps content */
+  position: fixed; /* Fixed position to stay on top */
   top: 0;
   left: 0;
-  width: 100% !important;
-  z-index: 1000; /* Keeps it above other content */
+  width: 100%;
+  z-index: 1000; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
-  padding: 10px 12%;
+  background: transparent; /* Transparent background */
+  padding: 10px 12%; /* Original padding */
   font-family: 'Rock Salt', cursive !important;
   font-weight: 700 !important;
 }
 
-.hero-section { /* Adjust the first section below navbar */
+.hero-section { 
   padding-top: 80px; /* Adjust based on navbar height */
 }
-
-
-
-.hidden {
-  transform: translateY(-100%); /* Hides navbar when scrolled down */
-}
-
 
 .nav_links {
   display: flex;
   list-style: none;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-  gap: 5rem; /* Set a fixed gap */
-  max-width: 100%; /* Prevent overflow */
-  flex-shrink: 0; /* Prevent shrinking on smaller screens */
+  gap: 5rem; 
+  max-width: 100%; 
+  flex-shrink: 0; 
 }
 
 .nav_links a {
@@ -66,79 +58,94 @@ nav {
   color: #edf0f1;
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav_links a:hover {
-  color: #FF8EB6;
-  font-size: scale(1.2);
+  color: #FF8EB6; /* Pink highlight on hover */
 }
 
 /* Sidebar - hidden by default */
 .sidebar {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -250px; /* Start off-screen */
   width: 250px;
   height: 100vh;
   background-color: rgba(20, 3, 41, 0.75);
   backdrop-filter: blur(12px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 50px;
+  transition: right 0.3s ease; /* Smooth transition */
+}
+
+.sidebar.open {
+  right: 0; /* Slide in */
 }
 
 .sidebar a {
   color: #edf0f1;
   text-decoration: none;
-  padding: 0px 0;
+  padding: 10px 0; /* Added padding */
   display: block;
-}
-
-.sidebar li {
-  width: 100%;
 }
 
 /* Hamburger Menu Button */
 .menu-button {
-  background: none;
-  border: none;
-  cursor: pointer;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
   display: none; /* Hidden by default */
+  position: fixed !important; /* Fixed to the side */
+  top: 40px; /* Align with navbar */
+  right: 50px; /* Right side */
+  z-index: 1001; /* Above navbar */
+}
+
+.menu-button svg {
+  width: 40px !important; /* Size for the hamburger icon */
+  height: 40px !important; /* Size for the hamburger icon */
 }
 
 /* Media Queries */
 @media screen and (max-width: 1400px) { 
   .nav_links li a {
-      font-size: 20px; /* Adjust to your preferred size */
+    font-size: 20px !important; /* Adjust to your preferred size */
   }
 }
 @media screen and (max-width: 1000px) { 
   .nav_links li a {
-      font-size: 16px; /* Adjust to your preferred size */
+    font-size: 16px !important; /* Adjust to your preferred size */
   }
 }
 
-
 @media (max-width: 800px) {
   .hideOnMobile {
-    display: none;
+    display: none !important;
   }
 
   .menu-button {
-    display: block;
+    display: block !important; /* Show menu button on mobile */
+    padding: 0 !important; /* No padding */
+    margin-left: 10px !important; /* Align with logo */
+  }
+
+  .logo {
+    width: 100px !important; /* Smaller logo for mobile */
+    margin-left: -10px !important; /* Add margin to the left */
   }
 }
 
 @media (max-width: 400px) {
   .sidebar {
-    width: 100%;
+    width: 100%; /* Full-width sidebar on smaller screens */
   }
 }
 
 .menu-button svg path,
-.sidebar li svg path {
-  fill: white;
+.sidebar a svg path {
+  fill: white !important; /* Set color for the hamburger icon and sidebar links */
 }

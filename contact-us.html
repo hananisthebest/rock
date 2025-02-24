@@ -1,122 +1,164 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>StageFright | Contact Us</title>
-
-   <!-- css -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-   <link rel="stylesheet" href="contact-us.css">
-    <link rel="stylesheet" href="footer.css"> 
-    <link rel="stylesheet" href="navbar.css">
-  </head>
-  <body>
-
-   <!-- Navbar -->
-   <nav id="navbar">
-      <a href="index.html" class="logo-container">
-        <img class="logo" src="logo.png" alt="logo">
-      </a>
-      <ul class="nav_links">
-        <li><a href="about.html" class="hideOnMobile">The Band</a></li>
-        <li><a href="tour-dates.html" class="hideOnMobile">Tour Dates</a></li>
-        <li><a href="merch.html" class="hideOnMobile">Merch</a></li>
-        <li><a href="contact-us.html" class="hideOnMobile">Contact Us</a></li>
-        <li class="menu-button" onclick="showSidebar()">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-              <path fill="white" d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <!-- Sidebar for mobile view -->
-      <ul class="sidebar">
-        <li onclick="hideSidebar()">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-              <path fill="white" d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
-            </svg>
-          </a>
-        </li>
-        <li><a href="about.html">The Band</a></li>
-        <li><a href="tour-dates.html">Tour Dates</a></li>
-        <li><a href="merch.html">Merch</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </nav>
-    <script src="navbar.js"></script>
-
-    <!-- content -->
-    <section>
-      <div class="container">
-        <div>
-            <a class="button-62" href="book-us.html"></a>
-        </div>
-        <div>
-            <a class="button-62" href="mailto:stagefright201@gmail.com"></a>
-        </div>
-        <div>
-            <a class="button-62" href="email-us.html"></a>
-        </div>
-      </div>
-    </section>
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   <title>StageFright | Contact Us</title>
 
 
-    <div class="bottomimage-container">
-      <img src="contact-us.img.png" alt="contact us Banner" class="bottomcontact-image">
-    </div>
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="contact-us.css">
+   <link rel="stylesheet" href="footer.css">
+   <link rel="stylesheet" href="navbar.css">
+ </head>
+ <body>
 
 
-    <!-- Footer -->
-    <footer class="footer">
+  <!-- Navbar -->
+  <nav id="navbar">
+     <a href="index.html" class="logo-container">
+       <img class="logo" src="logo.png" alt="logo">
+     </a>
+     <ul class="nav_links">
+       <li><a href="about.html" class="hideOnMobile">The Band</a></li>
+       <li><a href="tour-dates.html" class="hideOnMobile">Tour Dates</a></li>
+       <li><a href="merch.html" class="hideOnMobile">Merch</a></li>
+       <li><a href="contact-us.html" class="hideOnMobile">Contact Us</a></li>
+       <li class="menu-button" onclick="showSidebar()">
+         <a href="#">
+           <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+             <path fill="white" d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+           </svg>
+         </a>
+       </li>
+     </ul>
+     <!-- Sidebar for mobile view -->
+     <ul class="sidebar">
+       <li onclick="hideSidebar()">
+         <a href="#">
+           <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+             <path fill="white" d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+           </svg>
+         </a>
+       </li>
+       <li><a href="about.html">The Band</a></li>
+       <li><a href="tour-dates.html">Tour Dates</a></li>
+       <li><a href="merch.html">Merch</a></li>
+       <li><a href="contact-us.html">Contact Us</a></li>
+     </ul>
+   </nav>
+   <script src="navbar.js"></script>
+   <script src="contact-us.js"></script>
+
+
+   <div class="top-image-container">
+     <div class="text-overlay">
+       <h1>CONTACT</h1>
+     </div>
+     <img src="concert.jpg" alt="contact us Banner" class="top-image">
+   </div>
+
+
+   <section id="contact">
+     
+    
+     <div class="contact-wrapper">
+    
+     <!-- Left contact page -->
+      
+       <form id="contact-form" class="form-horizontal" role="form">
+         
+         <div class="form-group">
+           <div class="col-sm-12">
+             <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+           </div>
+         </div>
+  
+         <div class="form-group">
+           <div class="col-sm-12">
+             <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+           </div>
+         </div>
+  
+         <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+        
+         <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+           <div class="alt-send-button">
+             <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+           </div>
+        
+         </button>
+        
+       </form>
+      
+     <!-- Left contact page -->
+      
+         <div class="direct-contact-container">
+  
+           <ul class="contact-list">
+             <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Pickerington, Ohio</span></i></li>
+            
+             <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-614-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+            
+             <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:stagefright201@gmail.com" title="Send me an email">stagefright201@gmail.com</a></span></i></li>
+            
+           </ul>
+
+    
+   </section>     
+
+
+
+
+     <!-- Footer -->
+     <footer class="footer">
       <div class="footer-top-image">
-          <img src="stagefright-logo.png" alt="Footer Heading" />
+        <img src="stagefright-logo.png" alt="Footer Heading" />
       </div>
 
       <div class="footerContainer">
-          <div class="socialIcons">
-              <a href="https://www.instagram.com/officialstagefrightband/" target="_blank">
-                  <i class="fa-brands fa-instagram"></i>
-              </a>
-              
-              <a href="https://x.com/fright_sta96486" target="_blank">
-                  <i class="fa-brands fa-twitter"></i></a>
+        <div class="socialIcons">
+          <a href="https://www.instagram.com/officialstagefrightband/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
 
-              <a href="https://www.youtube.com/channel/UCNrklXnl1g6ChVAZEOcw2cA" target="_blank">
-                  <i class="fa-brands fa-youtube"></i></a>
-          </div>
+          <a href="https://x.com/fright_sta96486" target="_blank">
+            <i class="fa-brands fa-twitter"></i></a>
+
+          <a href="https://www.youtube.com/channel/UCNrklXnl1g6ChVAZEOcw2cA" target="_blank">
+            <i class="fa-brands fa-youtube"></i></a>
+        </div>
       </div>
-      
+
       <div class="footer-bottom">
-          <h4>Pickerington North High School, StageFright Website, Pickerington, Ohio, 2025</h4>
-          <h3>COPYRIGHT @2024 StageFright Official Website ALL RIGHTS RESERVED</h3>
+        <h4>Pickerington North High School, StageFright Website, Pickerington, Ohio, 2025</h4>
+        <h3>COPYRIGHT @2025 StageFright Official Website ALL RIGHTS RESERVED</h3>
       </div>
       <div class="footer-bumper"></div>
 
       <div class="footerNav">
-          <ul>   
-              <li><a href="index.html">Home</a></li>
-              <li>|</li>
-              <li><a href="about.html">Our History</a></li>
-              <li>|</li>
-              <li><a href="merch.html">Merch</a></li>
-              <li>|</li>
-              <li><a href="tour-dates.html">Tour Dates</a></li>
-              <li>|</li>
-              <li><a href="contact-us.html">Contact Us</a></li>
-              <li>|</li>
-              <li>©STAGEFRIGHT</li>
-          </ul>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>|</li>
+          <li><a href="about.html">Our History</a></li>
+          <li>|</li>
+          <li><a href="merch.html">Merch</a></li>
+          <li>|</li>
+          <li><a href="tour-dates.html">Tour Dates</a></li>
+          <li>|</li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li>|</li>
+          <li>©STAGEFRIGHT</li>
+        </ul>
       </div>
-    </footer> 
+    </footer>
 
-  </body>
+ </body>
 </html>

@@ -155,7 +155,7 @@ button:hover {
       padding: 0 10vw;
       display: flex;
       overflow-x: auto;
-      scroll-behavior: smooth;
+      scroll-behavior:smooth;
     }
     
     .product-container::-webkit-scrollbar {

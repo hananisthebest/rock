@@ -7,7 +7,7 @@ productContainers.forEach((item, i) => {
     let containerWidth = containerDimensions.width;
 
     // Adjust scroll speed
-    const scrollSpeed = 0.5 * containerWidth; // Adjust this for faster/slower scrolling
+    const scrollSpeed = 0.3 * containerWidth; // Adjust this for faster/slower scrolling
 
     // Instantly scroll when button is clicked (no animation delay)
     nxtBtn[i].addEventListener('click', () => {

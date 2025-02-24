@@ -139,9 +139,14 @@ nav {
   }
 }
 
+
 @media (max-width: 400px) {
   .sidebar {
-    width: 100%; /* Full-width sidebar on smaller screens */
+    display: none; /* Ensure the sidebar is hidden by default */
+  }
+
+  .menu-button {
+    display: block; /* Keep the hamburger menu visible */
   }
 }
 

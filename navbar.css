@@ -24,9 +24,8 @@ body {
 }
 
 /* Navbar styles */
-/* Navbar styles */
 nav {
-  position: absolute; /* Changed from fixed to absolute */
+  position: absolute; /* Fixed position to stay at the top of the page */
   top: 0;
   left: 0;
   width: 100%;
@@ -39,7 +38,6 @@ nav {
   font-family: 'Rock Salt', cursive !important;
   font-weight: 700 !important;
 }
-
 
 .hero-section { 
   padding-top: 80px; /* Adjust based on navbar height */
@@ -69,7 +67,7 @@ nav {
 
 /* Sidebar - hidden by default */
 .sidebar {
-  position: absolute;
+  position: fixed; /* Changed to fixed */
   top: 0;
   right: -250px; /* Start off-screen */
   width: 250px;
@@ -150,4 +148,9 @@ nav {
 .menu-button svg path,
 .sidebar a svg path {
   fill: white !important; /* Set color for the hamburger icon and sidebar links */
+}
+
+/* Hide the hamburger menu when the sidebar is open */
+.sidebar.open + .menu-button {
+  display: none !important; /* Hide hamburger button when sidebar is open */
 }

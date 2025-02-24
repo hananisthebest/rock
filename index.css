@@ -105,14 +105,14 @@ button:hover {
 @media (max-height: 800px) {
     .youtube-video {
         min-width: 58vw;
-        min-height: 30.5vw;
+        min-height: 28.5vw;
     }
 }
 
 @media (max-width: 800px) {
     .youtube-video {
-        width: 80vw;
-        height: 45vw;
+        width: 76vw;
+        height: 42vw;
     }
 }
 

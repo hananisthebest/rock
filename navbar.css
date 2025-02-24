@@ -142,13 +142,20 @@ nav {
 
 @media (max-width: 400px) {
   .sidebar {
-    display: none; /* Ensure the sidebar is hidden by default */
+    visibility: hidden; /* Hide sidebar, but it remains in the layout */
+    right: -250px; /* Keep it off-screen */
   }
 
   .menu-button {
     display: block; /* Keep the hamburger menu visible */
   }
+
+  .sidebar.open {
+    visibility: visible; /* Make it visible when open */
+    right: 0; /* Slide it in */
+  }
 }
+
 
 .menu-button svg path,
 .sidebar a svg path {

@@ -15,8 +15,8 @@ body {
 /* Top Image */
 .top-image-container {
   width: 100%;
-  text-align: center;
-  margin-bottom: 0;
+  overflow: hidden;
+  position: relative; /* Position relative for absolute positioning of text */
 }
 
 .h1,h1 {
@@ -26,12 +26,7 @@ body {
 font-weight:900;
 }
 
-.top-image {
-  width: 100%;
-  max-height: 350px;
-  object-fit: cover;
-  display: block;
-}
+
 
 /* Flex Container */
 .container {
@@ -47,7 +42,8 @@ font-weight:900;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
   width: 65%;
-  margin-top: -650px;
+  margin-top: -700px;
+  z-index: 1;
 }
 
 /* Product Card */
@@ -189,6 +185,13 @@ footer {
   margin-top: auto; /* Ensure no extra margin */
 }
 
+.top-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.9;
+}
+
 .text-overlay {
   position: absolute;
   top: 50%; /* Center vertically */
@@ -200,7 +203,8 @@ footer {
   z-index: 1;
 }
 
-@media (max-width: 1200px) {
+/* Hide the TOUR text on screens smaller than 800px */
+@media (max-width: 800px) {
   .text-overlay {
       display: none; /* Hide text */
   }

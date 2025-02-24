@@ -9,7 +9,7 @@
 body {
   background-color: #140329;
   font-family: 'Arial', sans-serif; 
-  color: #bbbbbb;
+  color: #bbbbbb!important;
 }
 
 /* Logo */
